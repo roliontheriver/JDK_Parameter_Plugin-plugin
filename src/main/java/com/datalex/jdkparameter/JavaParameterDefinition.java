@@ -1,12 +1,12 @@
-package org.jvnet.jenkins.plugins.javachoiceparameter.JavaChoiceParameterValue;
+package com.datalex.jdkparameter;
 
+import hudson.Extension;
 import hudson.model.*;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.StaplerRequest;
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -18,7 +18,7 @@ import java.util.List;
  * Time: 10:53 AM
  * To change this template use File | Settings | File Templates.
  */
-public class JavaParameterDefinition extends SimpleParameterDefinition {
+public class JavaParameterDefinition extends ParameterDefinition {
 
     public static final String VERSION = "version";
     public final List<String> defaultJDKs;
@@ -71,8 +71,13 @@ public class JavaParameterDefinition extends SimpleParameterDefinition {
     }
 
     @Override
-    public ParameterValue createValue(String value) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    public ParameterValue createValue(StaplerRequest req) {
+        String[] value = req.getParameterValues(getName());
+        if (value == null || value.length < 1) {
+            return getDefaultParameterValue();
+        } else {
+            return new JavaParameterValue(getName(), Arrays.asList("JDK1", "JDK2"));
+        }
     }
 
     /**
@@ -95,5 +100,39 @@ public class JavaParameterDefinition extends SimpleParameterDefinition {
             test.add(0, "master");
         }
         return test;
+    }
+
+
+    @Extension
+    public static class DescriptorImpl extends ParameterDescriptor {
+
+        @Override
+        public String getDisplayName() {
+            return "JDK String Parameter";
+        }
+
+//        @Override
+//        public String getHelpFile() {
+//            return "/plugin/validating-string-parameter/help.html";
+//        }
+
+//        /**
+//         * Called to validate the passed user entered value against the configured regular expression.
+//         */
+//        public FormValidation doValidate(@QueryParameter("regex") String regex,
+//                                         @QueryParameter("failedValidationMessage") final String failedValidationMessage,
+//                                         @QueryParameter("value") final String value) {
+//            try {
+//                if (Pattern.matches(regex, value)) {
+//                    return FormValidation.ok();
+//                } else {
+//                    return failedValidationMessage == null || "".equals(failedValidationMessage)
+//                            ? FormValidation.error("Value entered does not match regular expression: " + regex)
+//                            : FormValidation.error(failedValidationMessage);
+//                }
+//            } catch (PatternSyntaxException pse) {
+//                return FormValidation.error("Invalid regular expression [" + regex + "]: " + pse.getDescription());
+//            }
+//        }
     }
 }
