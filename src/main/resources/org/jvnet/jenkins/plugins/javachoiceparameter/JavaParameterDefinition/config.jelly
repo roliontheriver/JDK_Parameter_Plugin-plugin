@@ -23,16 +23,14 @@ THE SOFTWARE.
 -->
 
 <!-- this is the page fragment displayed to set up a job -->
-<?jelly escape-by-default='true'?>
-<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
-	xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form"
-	xmlns:i="jelly:fmt" xmlns:p="/lib/hudson/project">
+<!--<?jelly escape-by-default='true'?>-->
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:f="/lib/form">
 
-    <st:once>
-        <script type="text/javascript" src="${resURL}/plugin/JDK_Parameter_Choice/lib/JDKParameter.js" />
-    </st:once>
-    <script >
-    </script>	
+    <!--<st:once>-->
+        <!--<script type="text/javascript" src="${resURL}/plugin/JDK_Parameter_Choice/lib/JDKParameter.js" />-->
+    <!--</st:once>-->
+    <!--<script >-->
+    <!--</script>	-->
 
     <f:entry title="${%Name}" >
 		<f:textbox name="parameter.name" value="${instance.name}" />
@@ -63,10 +61,10 @@ THE SOFTWARE.
 
     <f:entry title="Possible JDKs" description="${%selectableJDKs}">
         <select name="allowedSlaves" multiple="multiple" size="5">
-            <j:invokeStatic className="org.jenkins.plugins.JavaChoiceParameter.JavaParameterDefinition" method="getSlaveNamesForSelection" var="allJDKs" />
+            <j:invokeStatic className="org.jenkins.plugins.JavaChoiceParameter.JavaParameterDefinition" method="getSelectableJDKNames" var="allJDKs" />
             <j:forEach var="aJDK" items="${allJDKs}" varStatus="loop">
                 <j:choose>
-                    <j:when test="${instance.allowedSlaves.contains(aJDK)}">
+                    <j:when test="${instance.defaultJDKs.contains(aJDK)}">
                         <option value="${aJDK}" selected="selected">${aJDK}</option>
                     </j:when>
                     <j:otherwise>
