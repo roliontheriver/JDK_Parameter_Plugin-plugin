@@ -5,6 +5,11 @@ import hudson.model.AbstractBuild;
 import hudson.model.ParameterValue;
 import org.kohsuke.stapler.DataBoundConstructor;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.logging.Logger;
+
 /**
  * Created with IntelliJ IDEA.
  * User: barisbatiege
@@ -14,14 +19,16 @@ import org.kohsuke.stapler.DataBoundConstructor;
  */
 public class JavaParameterValue extends ParameterValue {
 
-    public JavaParameterValue(String name, String version){
-        super(name, version);
-    }
+    private static final Logger LOGGER = Logger.getLogger(JavaParameterValue.class.getName());
 
     @DataBoundConstructor
-    public JavaParameterValue(String version){
-        super(version);
+    public JavaParameterValue(String name, List<String> jdks){
+        super(name);
     }
+    
+//    public List<String> getJDKs(){
+//        return Collections.unmodifiableList(JDKs == null ? new ArrayList<String>() : JDKs);
+//    }
 
     @Override
     public void buildEnvVars(AbstractBuild<?, ?> build, EnvVars env){
