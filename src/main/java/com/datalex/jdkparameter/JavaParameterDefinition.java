@@ -33,9 +33,9 @@ public class JavaParameterDefinition extends ParameterDefinition {
         this.allowedJDKs = allowedJDKs;
     }
 
-//    public static List<String>  getJDKNames(){
-//        return Arrays.asList("JDK1", "JDK2");
-//    }
+    public static List<String>  getJDKNames(){
+        return Arrays.asList("JDK1", "JDK2");
+    }
 
     public static List<String>  getSelectableJDKNames(){
         return Arrays.asList("JDK1", "JDK2");
@@ -80,27 +80,27 @@ public class JavaParameterDefinition extends ParameterDefinition {
         }
     }
 
-    /**
-     * Gets the names of all configured slaves, regardless whether they are
-     * online.
-     *
-     * @return list with all slave names
-     */
-    @SuppressWarnings("deprecation")
-    public static List<String> getJDKNames() {
-        ComputerSet computers = Hudson.getInstance().getComputer();
-        List<String> slaveNames = computers.get_slaveNames();
-
-        // slaveNames is unmodifiable, therefore create a new list
-        List<String> test = new ArrayList<String>();
-        test.addAll(slaveNames);
-
-        // add 'magic' name for master, so all nodes can be handled the same way
-        if (!test.contains("master")) {
-            test.add(0, "master");
-        }
-        return test;
-    }
+//    /**
+//     * Gets the names of all configured slaves, regardless whether they are
+//     * online.
+//     *
+//     * @return list with all slave names
+//     */
+//    @SuppressWarnings("deprecation")
+//    public static List<String> getJDKNames() {
+//        ComputerSet computers = Hudson.getInstance().getComputer();
+//        List<String> slaveNames = computers.get_slaveNames();
+//
+//        // slaveNames is unmodifiable, therefore create a new list
+//        List<String> test = new ArrayList<String>();
+//        test.addAll(slaveNames);
+//
+//        // add 'magic' name for master, so all nodes can be handled the same way
+//        if (!test.contains("master")) {
+//            test.add(0, "master");
+//        }
+//        return test;
+//    }
 
 
     @Extension
