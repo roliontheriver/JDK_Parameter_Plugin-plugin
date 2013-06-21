@@ -5,8 +5,6 @@ import hudson.model.AbstractBuild;
 import hudson.model.ParameterValue;
 import org.kohsuke.stapler.DataBoundConstructor;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.logging.Logger;
 

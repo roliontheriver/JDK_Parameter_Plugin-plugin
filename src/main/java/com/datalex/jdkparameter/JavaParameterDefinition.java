@@ -2,11 +2,13 @@ package com.datalex.jdkparameter;
 
 import hudson.Extension;
 import hudson.model.*;
+import hudson.tools.JDKInstaller;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.StaplerRequest;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -34,11 +36,35 @@ public class JavaParameterDefinition extends ParameterDefinition {
     }
 
     public static List<String>  getJDKNames(){
-        return Arrays.asList("JDK1", "JDK2");
+        JDKInstaller.JDKFamilyList list = null;
+        try {
+            list = JDKInstaller.JDKList.all().get(JDKInstaller.JDKList.class).toList();
+        } catch (IOException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+
+        List<String> result = new ArrayList<String>();
+        for(JDKInstaller.JDKFamily jdk : list.data) {
+            result.add(jdk.name);
+        }
+
+        return result;
     }
 
     public static List<String>  getSelectableJDKNames(){
-        return Arrays.asList("JDK1", "JDK2");
+        JDKInstaller.JDKFamilyList list = null;
+        try {
+            list = JDKInstaller.JDKList.all().get(JDKInstaller.JDKList.class).toList();
+        } catch (IOException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+
+        List<String> result = new ArrayList<String>();
+        for(JDKInstaller.JDKFamily jdk : list.data) {
+            result.add(jdk.name);
+        }
+
+        return result;
     }
 
 
@@ -51,7 +77,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
     @Override
     public ParameterValue createValue(StaplerRequest req, JSONObject jo) {
         final String name = jo.getString("name");
-        final Object joValue = jo.get("value") == null ? jo.get("jdks") : jo.get("value");
+        final Object joValue = jo.get("defaultJDKs") == null ? jo.get("allJDKs") : jo.get("defaultJDKs");
 
         List<String> defaultJDKs = new ArrayList<String>();
         if (joValue instanceof String){
@@ -108,7 +134,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
         @Override
         public String getDisplayName() {
-            return "JDK String Parameter";
+            return "JDK Choice Parameter";
         }
 
 //        @Override

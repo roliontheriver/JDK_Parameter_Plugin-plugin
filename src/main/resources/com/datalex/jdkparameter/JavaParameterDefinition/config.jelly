@@ -45,10 +45,10 @@ THE SOFTWARE.
 
     <f:entry title="Default JDKs" description="${%defaultJDKs}">
         <select name="defaultJDKs">
-            <j:invokeStatic className="org.jenkins.plugins.JavaChoiceParameter.JavaParameterDefinition" method="getJDKNames" var="allJDK" />
+            <j:invokeStatic className="com.datalex.jdkparameter.JavaParameterDefinition" method="getJDKNames" var="allJDKs" />
             <j:forEach var="aJDK" items="${allJDKs}" varStatus="loop">
                 <j:choose>
-                    <j:when test="${instance.defaultJDKs.equals(aJDK)}">
+                    <j:when test="${instance.defaultJDKs.contains(aJDK)}">
                         <option value="${aJDK}" selected="selected">${aJDK}</option>
                     </j:when>
                     <j:otherwise>
@@ -59,9 +59,9 @@ THE SOFTWARE.
         </select>
     </f:entry>
 
-    <f:entry title="Possible JDKs" description="${%selectableJDKs}">
-        <select name="allowedSlaves" multiple="multiple" size="5">
-            <j:invokeStatic className="org.jenkins.plugins.JavaChoiceParameter.JavaParameterDefinition" method="getSelectableJDKNames" var="allJDKs" />
+    <f:entry title="Selectable JDKs" description="${%selectableJDKs}">
+        <select name="selectableJDKs" multiple="multiple" size="5">
+            <j:invokeStatic className="com.datalex.jdkparameter.JavaParameterDefinition" method="getSelectableJDKNames" var="allJDKs" />
             <j:forEach var="aJDK" items="${allJDKs}" varStatus="loop">
                 <j:choose>
                     <j:when test="${instance.defaultJDKs.contains(aJDK)}">
