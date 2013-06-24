@@ -11,6 +11,7 @@ import org.kohsuke.stapler.StaplerRequest;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -23,15 +24,15 @@ import java.util.List;
 public class JavaParameterDefinition extends ParameterDefinition {
 
     public static final String VERSION = "version";
-    public final List<String> defaultJDKs;
+    public final String defaultJDK;
     public final List<String> allowedJDKs;
-    @Deprecated
-    public transient String defaultValue;
+
+
 
     @DataBoundConstructor
-    public JavaParameterDefinition(String name, String version, List<String>allowedJDKs, List<String>defaultJDKs){
+    public JavaParameterDefinition(String name, String version, String defaultJDK, List<String>allowedJDKs){
         super(name, version);
-        this.defaultJDKs = defaultJDKs;
+        this.defaultJDK = defaultJDK;
         this.allowedJDKs = allowedJDKs;
     }
 
@@ -70,28 +71,37 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
     @Override
     public String getDescription() {
-        return "JDK  Parameter";
+        return "JDK Parameter";
     }
 
 
     @Override
     public ParameterValue createValue(StaplerRequest req, JSONObject jo) {
         final String name = jo.getString("name");
-        final Object joValue = jo.get("defaultJDKs") == null ? jo.get("allJDKs") : jo.get("defaultJDKs");
+        final Object joValue = jo.get("defaultJDK");
+        final JSONArray json_allowedJDKS = (JSONArray)jo.get("allowedJDKs");
 
-        List<String> defaultJDKs = new ArrayList<String>();
-        if (joValue instanceof String){
-            defaultJDKs.add((String) joValue);
-        }
-        else if (joValue instanceof JSONArray) {
-                JSONArray ja = (JSONArray) joValue;
-                for (Object strObj : ja) {
-                    defaultJDKs.add((String) strObj);
+        String defaultJDK = (String) joValue;
+        List<String> allowedJDKs = new ArrayList<String>();
 
-            }
+        for (Object strObj : json_allowedJDKS) {
+           allowedJDKs.add((String) strObj);
         }
 
-        JavaParameterValue value = new JavaParameterValue(name, defaultJDKs);
+
+//        List<String> defaultJDKs = new ArrayList<String>();
+//        if (joValue instanceof String){
+//            defaultJDKs.add((String) joValue);
+//        }
+//        else if (joValue instanceof JSONArray) {
+//                JSONArray ja = (JSONArray) joValue;
+//                for (Object strObj : ja) {
+//                    defaultJDKs.add((String) strObj);
+//
+//            }
+//        }
+
+        JavaParameterValue value = new JavaParameterValue(name,defaultJDK,   allowedJDKs);
         value.setDescription(getDescription());
         return value;
     }
@@ -99,10 +109,14 @@ public class JavaParameterDefinition extends ParameterDefinition {
     @Override
     public ParameterValue createValue(StaplerRequest req) {
         String[] value = req.getParameterValues(getName());
+        String defaultJDK1 = (String)req.getAttribute("defaultJDK");
+        String[] allowedJDKs = (String[]) req.getAttribute("allowedJDKs");
+        List<String> jdks = new ArrayList<String>();
+        Collections.addAll(jdks, allowedJDKs);
         if (value == null || value.length < 1) {
             return getDefaultParameterValue();
         } else {
-            return new JavaParameterValue(getName(), Arrays.asList("JDK1", "JDK2"));
+            return new JavaParameterValue(getName(),  defaultJDK1, jdks);
         }
     }
 
@@ -136,6 +150,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
         public String getDisplayName() {
             return "JDK Choice Parameter";
         }
+
 
 //        @Override
 //        public String getHelpFile() {

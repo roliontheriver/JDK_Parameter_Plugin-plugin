@@ -19,14 +19,36 @@ public class JavaParameterValue extends ParameterValue {
 
     private static final Logger LOGGER = Logger.getLogger(JavaParameterValue.class.getName());
 
+    private String defaultJDK;
+    private List<String> allowedJDKs;
+
     @DataBoundConstructor
-    public JavaParameterValue(String name, List<String> jdks){
+    public JavaParameterValue(String name, String defaultJDK, List<String> allowedJDKs){
         super(name);
+        this.defaultJDK = defaultJDK;
+        this.allowedJDKs = allowedJDKs;
     }
 
 //    public List<String> getJDKs(){
 //        return Collections.unmodifiableList(JDKs == null ? new ArrayList<String>() : JDKs);
 //    }
+
+
+    public String getDefaultJDK() {
+        return defaultJDK;
+    }
+
+    public void setDefaultJDK(String defaultJDK) {
+        this.defaultJDK = defaultJDK;
+    }
+
+    public List<String> getAllowedJDKs() {
+        return allowedJDKs;
+    }
+
+    public void setAllowedJDKs(List<String> allowedJDKs) {
+        this.allowedJDKs = allowedJDKs;
+    }
 
     @Override
     public void buildEnvVars(AbstractBuild<?, ?> build, EnvVars env){
