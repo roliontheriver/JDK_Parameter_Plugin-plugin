@@ -32,19 +32,19 @@ THE SOFTWARE.
     <!--<script >-->
     <!--</script>	-->
 
-    <f:entry title="${%Name}" >
+    <f:entry title="${%Name}" field="name">
 		<f:textbox name="parameter.name" value="${instance.name}" />
 	</f:entry>
 
-    <f:entry title="Possible JDKs" description="${%SelectableJDKs}"></f:entry>
+    <!--<f:entry title="Possible JDKs" description="${%SelectableJDKs}"></f:entry>-->
 
     <!--<f:entry title="${%Description}" >-->
         <!--<f:textarea name="parameter.description" value="${instance.description}" />-->
     <!--</f:entry>-->
 
 
-    <f:entry title="Default JDKs" description="${%defaultJDKs}">
-        <select name="defaultJDK">
+    <f:entry title="Default JDKs" description="${%defaultJDK}" field="defaultJDK">
+        <select>
             <j:invokeStatic className="com.datalex.jdkparameter.JavaParameterDefinition" method="getJDKNames" var="allJDKs" />
             <j:forEach var="aJDK" items="${allJDKs}" varStatus="loop">
                 <j:choose>
@@ -59,8 +59,9 @@ THE SOFTWARE.
         </select>
     </f:entry>
 
-    <f:entry title="Selectable JDKs" description="${%selectableJDKs}">
-        <select name="selectableJDKs" multiple="multiple" size="5">
+
+    <f:entry title="Selectable JDKs" description="${%selectableJDKs}" field="selectableJDKs">
+        <select multiple="multiple" size="5">
             <j:invokeStatic className="com.datalex.jdkparameter.JavaParameterDefinition" method="getSelectableJDKNames" var="allJDKs" />
             <j:forEach var="aJDK" items="${allJDKs}" varStatus="loop">
                 <j:choose>
@@ -73,6 +74,10 @@ THE SOFTWARE.
                 </j:choose>
             </j:forEach>
         </select>
+    </f:entry>
+
+    <f:entry title="Description" field="description">
+        <f:textarea />
     </f:entry>
 
 

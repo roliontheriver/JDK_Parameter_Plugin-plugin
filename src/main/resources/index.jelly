@@ -1,0 +1,6 @@
+<!--
+  This view is used to render the installed plugins page.
+-->
+<div>
+    Lets you specify a set of JDKs that can be picked from as a build parameter.
+</div>
