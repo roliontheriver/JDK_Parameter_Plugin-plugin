@@ -37,33 +37,25 @@ public class JavaParameterDefinition extends ParameterDefinition {
     }
 
     public static List<String>  getJDKNames(){
-        JDKInstaller.JDKFamilyList list = null;
-        //jenkins.model.Jenkins.getInstance().getJDKs()
-        try {
-            list = JDKInstaller.JDKList.all().get(JDKInstaller.JDKList.class).toList();
-        } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
 
+        List<JDK> jdks = jenkins.model.Jenkins.getInstance().getJDKs();
         List<String> result = new ArrayList<String>();
-        for(JDKInstaller.JDKFamily jdk : list.data) {
-            result.add(jdk.name);
+
+        for(JDK jdk : jdks) {
+            result.add(jdk.getName());
         }
 
         return result;
     }
 
     public static List<String>  getSelectableJDKNames(){
-        JDKInstaller.JDKFamilyList list = null;
-        try {
-            list = JDKInstaller.JDKList.all().get(JDKInstaller.JDKList.class).toList();
-        } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
 
+        List<JDK> jdks = jenkins.model.Jenkins.getInstance().getJDKs();
         List<String> result = new ArrayList<String>();
-        for(JDKInstaller.JDKFamily jdk : list.data) {
-            result.add(jdk.name);
+
+
+        for(JDK jdk : jdks) {
+            result.add(jdk.getName());
         }
 
         return result;
