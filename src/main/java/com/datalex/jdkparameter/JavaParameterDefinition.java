@@ -38,6 +38,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
     public static List<String>  getJDKNames(){
         JDKInstaller.JDKFamilyList list = null;
+        //jenkins.model.Jenkins.getInstance().getJDKs()
         try {
             list = JDKInstaller.JDKList.all().get(JDKInstaller.JDKList.class).toList();
         } catch (IOException e) {
