@@ -1,10 +1,13 @@
 package com.datalex.jdkparameter;
 
 import hudson.EnvVars;
+import hudson.Extension;
 import hudson.Launcher;
 import hudson.model.AbstractBuild;
+import hudson.model.AbstractProject;
 import hudson.model.BuildListener;
 import hudson.tasks.BuildWrapper;
+import hudson.tasks.BuildWrapperDescriptor;
 
 import java.io.IOException;
 
@@ -26,6 +29,21 @@ public class JavaParameterBuildWrapper extends BuildWrapper {
         boolean success = true;
 
         return null;
+
+    }
+
+    @Extension
+    public static class DescriptorImpl extends BuildWrapperDescriptor {
+
+        @Override
+        public String getDisplayName() {
+            return "Select JDK to be used";
+        }
+
+        @Override
+        public boolean isApplicable(AbstractProject<?, ?> item) {
+            return true;
+        }
 
     }
 }
