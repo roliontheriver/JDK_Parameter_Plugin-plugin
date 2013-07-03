@@ -3,6 +3,7 @@ package com.datalex.jdkparameter;
 import hudson.EnvVars;
 import hudson.model.AbstractBuild;
 import hudson.model.ParameterValue;
+import hudson.tasks.BuildWrapper;
 import org.kohsuke.stapler.DataBoundConstructor;
 
 import java.util.List;
@@ -19,30 +20,20 @@ public class JavaParameterValue extends ParameterValue {
 
     private static final Logger LOGGER = Logger.getLogger(JavaParameterValue.class.getName());
 
-    private String defaultJDK;
-    private List<String> allowedJDKs;
+    private String selectedJDK;
 
     @DataBoundConstructor
-    public JavaParameterValue(String name, String defaultJDK, List<String> allowedJDKs, String description){
+    public JavaParameterValue(String name, String description, String selectedJDK){
         super(name, description);
-        this.defaultJDK = defaultJDK;
-        this.allowedJDKs = allowedJDKs;
+        this.selectedJDK = selectedJDK;
     }
 
-    public String getDefaultJDK() {
-        return defaultJDK;
+    public String getSelectedJDK() {
+        return selectedJDK;
     }
 
-    public void setDefaultJDK(String defaultJDK) {
-        this.defaultJDK = defaultJDK;
-    }
-
-    public List<String> getAllowedJDKs() {
-        return allowedJDKs;
-    }
-
-    public void setAllowedJDKs(List<String> allowedJDKs) {
-        this.allowedJDKs = allowedJDKs;
+    public void setSelectedJDK(String selectedJDK) {
+        this.selectedJDK = selectedJDK;
     }
 
     @Override
@@ -51,6 +42,11 @@ public class JavaParameterValue extends ParameterValue {
 
     }
 
+    @Override
+    public BuildWrapper createBuildWrapper(AbstractBuild<?,?> build) {
+        //this is where all the actions should be performed
+        return null;
+    }
 
 }
 

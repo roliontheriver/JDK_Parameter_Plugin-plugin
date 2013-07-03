@@ -61,7 +61,6 @@ public class JavaParameterDefinition extends ParameterDefinition {
         return defaultJDK;
     }
 
-
     public static List<String>  getSelectableJDKNames(){
         List<JDK> jdkList = jenkins.model.Jenkins.getInstance().getJDKs();
         List<String> result = new ArrayList<String>();
@@ -74,36 +73,15 @@ public class JavaParameterDefinition extends ParameterDefinition {
     @Override
     public ParameterValue createValue(StaplerRequest req, JSONObject jo) {
         final String name = jo.getString("name");
-        final String description = jo.getString("description");
-        final Object joValue = jo.get("defaultJDK");
-        final JSONArray json_allowedJDKS = (JSONArray)jo.get("allowedJDKs");
-
-        String defaultJDK = (String) joValue;
-        List<String> allowedJDKs = new ArrayList<String>();
-
-        for (Object strObj : json_allowedJDKS) {
-           allowedJDKs.add((String) strObj);
-        }
-
-        JavaParameterValue value = new JavaParameterValue(name,defaultJDK, allowedJDKs, description);
-        value.setDescription(getDescription());
-        return value;
+        final String selectedJDK = jo.getString("selectedJDK");
+        return  new JavaParameterValue(name, getDescription(), selectedJDK);
     }
 
     @Override
     public ParameterValue createValue(StaplerRequest req) {
-        String[] value = req.getParameterValues(getName());
-        String defaultJDK1 = (String)req.getAttribute("defaultJDK");
-        String[] allowedJDKs = (String[]) req.getAttribute("allowedJDKs");
-        String description = (String) req.getAttribute("description");
-        List<String> jdks = new ArrayList<String>();
-        Collections.addAll(jdks, allowedJDKs);
-
-        if (value == null || value.length < 1) {
-            return getDefaultParameterValue();
-        } else {
-            return new JavaParameterValue(getName(),  defaultJDK1, jdks, description);
-        }
+        String name = (String)req.getAttribute("name");
+        String selectedJDK = (String)req.getAttribute("selectedJDK");
+        return new JavaParameterValue(name, getDescription(), selectedJDK);
     }
 
     @Extension
