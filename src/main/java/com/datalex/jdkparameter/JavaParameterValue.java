@@ -23,16 +23,11 @@ public class JavaParameterValue extends ParameterValue {
     private List<String> allowedJDKs;
 
     @DataBoundConstructor
-    public JavaParameterValue(String name, String defaultJDK, List<String> allowedJDKs){
-        super(name);
+    public JavaParameterValue(String name, String defaultJDK, List<String> allowedJDKs, String description){
+        super(name, description);
         this.defaultJDK = defaultJDK;
         this.allowedJDKs = allowedJDKs;
     }
-
-//    public List<String> getJDKs(){
-//        return Collections.unmodifiableList(JDKs == null ? new ArrayList<String>() : JDKs);
-//    }
-
 
     public String getDefaultJDK() {
         return defaultJDK;
