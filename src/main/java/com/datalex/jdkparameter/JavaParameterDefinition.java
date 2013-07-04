@@ -30,143 +30,66 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
 
     @DataBoundConstructor
-    public JavaParameterDefinition(String name, String version, String defaultJDK, List<String>allowedJDKs){
-        super(name, version);
+    public JavaParameterDefinition(String name,String description ,
+                                   String defaultJDK, List<String>allowedJDKs ){
+        super(name, description);
         this.defaultJDK = defaultJDK;
         this.allowedJDKs = allowedJDKs;
     }
 
     public static List<String>  getJDKNames(){
-
-        List<JDK> jdks = jenkins.model.Jenkins.getInstance().getJDKs();
+        List<JDK> jdkList = jenkins.model.Jenkins.getInstance().getJDKs();
         List<String> result = new ArrayList<String>();
-
-        for(JDK jdk : jdks) {
+        for(JDK jdk : jdkList) {
             result.add(jdk.getName());
         }
-
         return result;
+    }
+
+    /**
+     * Returns a list of nodes the job could run on. If allowed nodes is empty,
+     * it falls back to all nodes
+     *
+     * @return list of nodenames.
+     */
+    public List<String> getAllowedJDKs() {
+        return allowedJDKs;
+    }
+
+
+    public String getDefaultJDK() {
+        return defaultJDK;
     }
 
     public static List<String>  getSelectableJDKNames(){
-
-        List<JDK> jdks = jenkins.model.Jenkins.getInstance().getJDKs();
+        List<JDK> jdkList = jenkins.model.Jenkins.getInstance().getJDKs();
         List<String> result = new ArrayList<String>();
-
-
-        for(JDK jdk : jdks) {
+        for(JDK jdk : jdkList) {
             result.add(jdk.getName());
         }
-
         return result;
     }
-
-
-    @Override
-    public String getDescription() {
-        return "JDK Parameter";
-    }
-
 
     @Override
     public ParameterValue createValue(StaplerRequest req, JSONObject jo) {
         final String name = jo.getString("name");
-        final Object joValue = jo.get("defaultJDK");
-        final JSONArray json_allowedJDKS = (JSONArray)jo.get("allowedJDKs");
-
-        String defaultJDK = (String) joValue;
-        List<String> allowedJDKs = new ArrayList<String>();
-
-        for (Object strObj : json_allowedJDKS) {
-           allowedJDKs.add((String) strObj);
-        }
-
-
-//        List<String> defaultJDKs = new ArrayList<String>();
-//        if (joValue instanceof String){
-//            defaultJDKs.add((String) joValue);
-//        }
-//        else if (joValue instanceof JSONArray) {
-//                JSONArray ja = (JSONArray) joValue;
-//                for (Object strObj : ja) {
-//                    defaultJDKs.add((String) strObj);
-//
-//            }
-//        }
-
-        JavaParameterValue value = new JavaParameterValue(name,defaultJDK,   allowedJDKs);
-        value.setDescription(getDescription());
-        return value;
+        final String selectedJDK = jo.getString("selectedJDK");
+        return  new JavaParameterValue(name, getDescription(), selectedJDK);
     }
 
     @Override
     public ParameterValue createValue(StaplerRequest req) {
-        String[] value = req.getParameterValues(getName());
-        String defaultJDK1 = (String)req.getAttribute("defaultJDK");
-        String[] allowedJDKs = (String[]) req.getAttribute("allowedJDKs");
-        List<String> jdks = new ArrayList<String>();
-        Collections.addAll(jdks, allowedJDKs);
-        if (value == null || value.length < 1) {
-            return getDefaultParameterValue();
-        } else {
-            return new JavaParameterValue(getName(),  defaultJDK1, jdks);
-        }
+        String name = (String)req.getAttribute("name");
+        String selectedJDK = (String)req.getAttribute("selectedJDK");
+        return new JavaParameterValue(name, getDescription(), selectedJDK);
     }
-
-//    /**
-//     * Gets the names of all configured slaves, regardless whether they are
-//     * online.
-//     *
-//     * @return list with all slave names
-//     */
-//    @SuppressWarnings("deprecation")
-//    public static List<String> getJDKNames() {
-//        ComputerSet computers = Hudson.getInstance().getComputer();
-//        List<String> slaveNames = computers.get_slaveNames();
-//
-//        // slaveNames is unmodifiable, therefore create a new list
-//        List<String> test = new ArrayList<String>();
-//        test.addAll(slaveNames);
-//
-//        // add 'magic' name for master, so all nodes can be handled the same way
-//        if (!test.contains("master")) {
-//            test.add(0, "master");
-//        }
-//        return test;
-//    }
-
 
     @Extension
     public static class DescriptorImpl extends ParameterDescriptor {
 
         @Override
         public String getDisplayName() {
-            return "JDK Choice Parameter";
+            return "JDK Parameter";
         }
-
-
-//        @Override
-//        public String getHelpFile() {
-//            return "/plugin/validating-string-parameter/help.html";
-//        }
-
-//        /**
-//         * Called to validate the passed user entered value against the configured regular expression.
-//         */
-//        public FormValidation doValidate(@QueryParameter("regex") String regex,
-//                                         @QueryParameter("failedValidationMessage") final String failedValidationMessage,
-//                                         @QueryParameter("value") final String value) {
-//            try {
-//                if (Pattern.matches(regex, value)) {
-//                    return FormValidation.ok();
-//                } else {
-//                    return failedValidationMessage == null || "".equals(failedValidationMessage)
-//                            ? FormValidation.error("Value entered does not match regular expression: " + regex)
-//                            : FormValidation.error(failedValidationMessage);
-//                }
-//            } catch (PatternSyntaxException pse) {
-//                return FormValidation.error("Invalid regular expression [" + regex + "]: " + pse.getDescription());
-//            }
-//        }
     }
 }

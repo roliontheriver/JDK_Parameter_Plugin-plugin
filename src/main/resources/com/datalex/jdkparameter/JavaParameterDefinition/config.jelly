@@ -43,8 +43,8 @@ THE SOFTWARE.
     <!--</f:entry>-->
 
 
-    <f:entry title="Default JDKs" description="${%defaultJDK}" field="defaultJDK">
-        <select>
+    <f:entry title="Default JDK" description="${%defaultJDK}" field="defaultJDK">
+        <select name="defaultJDK">
             <j:invokeStatic className="com.datalex.jdkparameter.JavaParameterDefinition" method="getJDKNames" var="allJDKs" />
             <j:forEach var="aJDK" items="${allJDKs}" varStatus="loop">
                 <j:choose>
@@ -60,9 +60,9 @@ THE SOFTWARE.
     </f:entry>
 
 
-    <f:entry title="Selectable JDKs" description="${%selectableJDKs}" field="selectableJDKs">
-        <select multiple="multiple" size="5">
-            <j:invokeStatic className="com.datalex.jdkparameter.JavaParameterDefinition" method="getSelectableJDKNames" var="allJDKs" />
+    <f:entry title="Selectable JDKs" description="${%selectableJDKs}" field="allowedJDKs">
+        <select name="allowedJDKs" multiple="multiple" size="5">
+            <j:invokeStatic className="com.datalex.jdkparameter.JavaParameterDefinition" method="getJDKNames" var="allJDKs" />
             <j:forEach var="aJDK" items="${allJDKs}" varStatus="loop">
                 <j:choose>
                     <j:when test="${instance.allowedJDKs.contains(aJDK)}">

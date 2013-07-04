@@ -23,30 +23,6 @@ import java.util.List;
  */
 public class JavaParameterBuildWrapper extends BuildWrapper {
 
-    public List<JDK> getJDKs() {
-        List<JDK> jdks = jenkins.model.Jenkins.getInstance().getJDKs();
-        if(jdks==null)
-            jdks = new ArrayList<JDK>();
-        return jdks;
-    }
-
-    public JDK getJDK(String name) {
-
-
-        if(name==null) {
-            // if only one JDK is configured, "default JDK" should mean that JDK.
-            List<JDK> jdks = getJDKs();
-            if(jdks.size()==1)  return jdks.get(0);
-            return null;
-        }
-        for (JDK j : getJDKs()) {
-            if(j.getName().equals(name))
-                return j;
-        }
-        return null;
-    }
-
-
     @Override
     public Environment setUp(AbstractBuild build, Launcher launcher, BuildListener listener) throws IOException, InterruptedException{
         String jdkValue = (String)build.getBuildVariables().get("jdk");
