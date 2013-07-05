@@ -2,6 +2,7 @@ package com.datalex.jdkparameter;
 
 import hudson.EnvVars;
 import hudson.model.AbstractBuild;
+import hudson.model.JDK;
 import hudson.model.ParameterValue;
 import hudson.tasks.BuildWrapper;
 import org.kohsuke.stapler.DataBoundConstructor;
@@ -45,6 +46,19 @@ public class JavaParameterValue extends ParameterValue {
     @Override
     public BuildWrapper createBuildWrapper(AbstractBuild<?,?> build) {
         //this is where all the actions should be performed
+        List<JDK> jdks = jenkins.model.Jenkins.getInstance().getJDKs();
+        JDK selected = null;
+        for(JDK jdk : jdks) {
+            if(jdk.getName().equalsIgnoreCase(selectedJDK)) {
+                selected = jdk;
+            }
+        }
+        try {
+            build.getProject().setJDK(selected);
+        } catch (Exception e) {
+            LOGGER.severe("Could not set the JDK");
+        }
+
         return null;
     }
 

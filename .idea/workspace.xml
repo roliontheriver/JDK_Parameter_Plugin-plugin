@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" afterPath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JDK_Parameter_Choice.iml" afterPath="$PROJECT_DIR$/JDK_Parameter_Choice.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly" afterPath="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterValue/value.jelly" afterPath="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterValue/value.jelly" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JDK_Parameter_Choice.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1372860194802" ignored="false" />
+    <file path="/Dummy.txt" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1373016051981" ignored="false" />
     <file path="/JavaParameterDefinition.java" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1372859565993" ignored="false" />
     <file path="/pom.xml" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1371552373519" ignored="false" />
     <file path="/config.jelly" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1372857422212" ignored="false" />
@@ -68,7 +67,43 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" line="81" class="com.datalex.jdkparameter.JavaParameterDefinition" package="com.datalex.jdkparameter">
         <option name="ENABLED" value="true" />
@@ -145,7 +180,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" line="47" class="com.datalex.jdkparameter.JavaParameterValue" package="com.datalex.jdkparameter">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" line="61" class="com.datalex.jdkparameter.JavaParameterValue" package="com.datalex.jdkparameter">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -160,7 +195,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" line="40" class="com.datalex.jdkparameter.JavaParameterValue" package="com.datalex.jdkparameter">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" line="41" class="com.datalex.jdkparameter.JavaParameterValue" package="com.datalex.jdkparameter">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -176,43 +211,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </breakpoint_any>
-    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -231,15 +230,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Function.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/kohsuke/stapler/stapler/1.189/stapler-1.189.jar!/org/kohsuke/stapler/Function.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="9" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="value.jelly" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterValue/value.jelly">
           <provider selected="true" editor-type-id="text-editor">
@@ -249,46 +239,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stapler.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/kohsuke/stapler/stapler/1.189/stapler-1.189.jar!/org/kohsuke/stapler/Stapler.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="19" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="JavaParameterValue.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="50" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.71770334">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractBuild.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3-sources.jar!/hudson/model/AbstractBuild.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="549" column="73" selection-start="20967" selection-end="20975" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParameterValue.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3-sources.jar!/hudson/model/ParameterValue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="14" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParameterDefinition.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3-sources.jar!/hudson/model/ParameterDefinition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="18" selection-start="5105" selection-end="5105" vertical-scroll-proportion="0.0">
+            <state line="44" column="53" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.5154185">
               <folding />
             </state>
           </provider>
@@ -298,17 +252,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly">
           <provider selected="true" editor-type-id="text-editor">
             <state line="36" column="37" selection-start="1727" selection-end="1738" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1372859383559" expanded="true" signature="1747:1778" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.jelly" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="74" selection-start="3114" selection-end="3118" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -345,18 +288,18 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/help-description.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly" />
-        <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterValue/value.jelly" />
         <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly" />
         <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/dev/apache-maven-3.0.4" />
-        <option name="userSettingsFile" value="$USER_HOME$/dev/apache-maven-3.0.4/conf/jenkins_settings.xml" />
+        <option name="mavenHome" value="$USER_HOME$/Software/apache-maven-3.0.5" />
+        <option name="userSettingsFile" value="$USER_HOME$/Software/apache-maven-3.0.5/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -438,10 +381,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="48" />
+    <option name="x" value="64" />
     <option name="y" value="-4" />
-    <option name="width" value="1233" />
-    <option name="height" value="1029" />
+    <option name="width" value="1377" />
+    <option name="height" value="865" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -471,7 +414,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -692,11 +635,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="77" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.0" />
@@ -727,7 +670,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="MavenSettings" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -1063,11 +1006,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="-4" width="1233" height="1029" extended-state="6" />
+    <frame x="64" y="-4" width="1377" height="865" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21800281" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1078,17 +1020,18 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14867924" sideWeight="0.2977099" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981133" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33924052" sideWeight="0.13507378" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33886793" sideWeight="0.556962" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2742616" sideWeight="0.7911464" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4449489" sideWeight="0.49886793" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27396226" sideWeight="0.556962" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.443038" sideWeight="0.49886793" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32630098" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1201,16 +1144,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/help-name.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3.jar!/hudson/model/ParameterDefinition.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="28" selection-start="1074" selection-end="1074" vertical-scroll-proportion="-12.2" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3.jar!/hudson/model/ParameterValue.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="16" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0" />
@@ -1250,30 +1183,12 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/kohsuke/stapler/stapler/1.189/stapler-1.189.jar!/org/kohsuke/stapler/Function.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="9" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="28" column="9" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/kohsuke/stapler/stapler/1.189/stapler-1.189.jar!/org/kohsuke/stapler/Stapler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="19" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3-sources.jar!/hudson/model/ParameterValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="14" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterValue/value.jelly">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="72" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="24" column="19" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly">
@@ -1282,15 +1197,6 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="37" selection-start="1727" selection-end="1738" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1372859383559" expanded="true" signature="1747:1778" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3-sources.jar!/hudson/model/AbstractBuild.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="549" column="73" selection-start="20967" selection-end="20975" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1302,9 +1208,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/kohsuke/stapler/stapler/1.189/stapler-1.189-sources.jar!/org/kohsuke/stapler/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="9" selection-start="3074" selection-end="3074" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/kohsuke/stapler/stapler/1.189/stapler-1.189-sources.jar!/org/kohsuke/stapler/Stapler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="80" selection-start="5451" selection-end="5451" vertical-scroll-proportion="0.5365474">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterValue/value.jelly">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="72" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3-sources.jar!/hudson/model/ParameterValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="14" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.02332815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3-sources.jar!/hudson/model/AbstractBuild.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="549" column="73" selection-start="20967" selection-end="20975" vertical-scroll-proportion="0.02245509">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="50" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.71770334">
+        <state line="44" column="53" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.5154185">
           <folding />
         </state>
       </provider>
@@ -1326,7 +1267,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1350,7 +1291,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
