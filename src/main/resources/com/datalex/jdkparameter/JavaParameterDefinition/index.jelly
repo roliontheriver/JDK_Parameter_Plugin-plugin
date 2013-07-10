@@ -37,7 +37,7 @@ THE SOFTWARE.
             <select name="selectedJDK" style="width:100px; margin-left: 15px;">
                 <j:forEach var="aJDK" items="${it.allowedJDKs}" varStatus="loop">
                     <j:choose>
-                        <j:when test="${it.defaultJDK.equals(aJDK)}">
+                        <j:when test="${it.defaultJDK.equals(aJDK)}" >
                             <option value="${aJDK}" selected="selected">${aJDK}</option>
                         </j:when>
                         <j:otherwise>
