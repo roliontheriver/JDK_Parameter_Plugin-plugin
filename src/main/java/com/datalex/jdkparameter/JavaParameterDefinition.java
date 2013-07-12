@@ -67,6 +67,9 @@ public class JavaParameterDefinition extends ParameterDefinition {
         for(JDK jdk : jdkList) {
             result.add(jdk.getName());
         }
+        if (jdkList == null)
+        result.add();
+
         return result;
     }
 
