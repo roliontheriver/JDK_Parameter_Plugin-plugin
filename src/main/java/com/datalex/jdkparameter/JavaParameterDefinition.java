@@ -26,15 +26,17 @@ public class JavaParameterDefinition extends ParameterDefinition {
     public static final String VERSION = "version";
     public final String defaultJDK;
     public final List<String> allowedJDKs;
+    public final String baseJDK;
 
 
 
     @DataBoundConstructor
     public JavaParameterDefinition(String name,String description ,
-                                   String defaultJDK, List<String>allowedJDKs ){
+                                   String defaultJDK, List<String>allowedJDKs, String baseJDK ){
         super(name, description);
         this.defaultJDK = defaultJDK;
         this.allowedJDKs = allowedJDKs;
+        this.baseJDK = baseJDK;
     }
 
     public static List<String>  getJDKNames(){
@@ -43,6 +45,22 @@ public class JavaParameterDefinition extends ParameterDefinition {
         for(JDK jdk : jdkList) {
             result.add(jdk.getName());
         }
+        return result;
+    }
+
+    public static String getBaseJDKName(){
+        JDKInstaller.JDKFamilyList baseJDKList = null;
+        try{
+        baseJDKList = JDKInstaller.JDKList.all().get(JDKInstaller.JDKList.class).toList();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        String result = "";
+        for(JDKInstaller.JDKFamily jdk : baseJDKList.data){
+            result = jdk.name;
+        }
+
         return result;
     }
 
@@ -61,14 +79,16 @@ public class JavaParameterDefinition extends ParameterDefinition {
         return defaultJDK;
     }
 
-    public static List<String>  getSelectableJDKNames(){
+
+
+    public List<String>  getSelectableJDKNames(){
         List<JDK> jdkList = jenkins.model.Jenkins.getInstance().getJDKs();
         List<String> result = new ArrayList<String>();
         for(JDK jdk : jdkList) {
             result.add(jdk.getName());
         }
-        if (jdkList == null)
-        result.add();
+        if (!jdkList.isEmpty())
+        result.add(baseJDK);
 
         return result;
     }
