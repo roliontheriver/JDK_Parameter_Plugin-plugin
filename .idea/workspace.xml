@@ -3,12 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" afterPath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JDK_Parameter_Choice.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1373635929170" ignored="false" />
-    <file path="/JavaParameterDefinition.java" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1373903812187" ignored="false" />
+    <file path="/Dummy.txt" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1373905571820" ignored="false" />
+    <file path="/JavaParameterDefinition.java" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1373970434640" ignored="false" />
     <file path="/pom.xml" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1371552373519" ignored="false" />
     <file path="/config.jelly" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1372857422212" ignored="false" />
     <file path="/JavaParameterValue.java" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1372859133154" ignored="false" />
@@ -30,7 +31,7 @@
     <file path="$PROJECT_DIR$/../extensible-choice-parameter-plugin-master/src/main/java/jp/ikedam/jenkins/plugins/extensible_choice_parameter/SystemGroovyChoiceListProvider.java" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1371808968175" ignored="false" />
     <file path="$PROJECT_DIR$/../extensible-choice-parameter-plugin-master/src/main/java/jp/ikedam/jenkins/plugins/extensible_choice_parameter/ChoiceListProvider.java" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1371808968175" ignored="false" />
     <file path="$PROJECT_DIR$/../extensible-choice-parameter-plugin-master/src/main/java/jp/ikedam/jenkins/plugins/extensible_choice_parameter/ChoiceWatchQueueDecisionHandler.java" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1371808968175" ignored="false" />
-    <file path="/JavaParameterDefinitionTest.java" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1373453686207" ignored="false" />
+    <file path="/JavaParameterDefinitionTest.java" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1373984547939" ignored="false" />
     <file path="/*.regexp" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1371823679416" ignored="false" />
     <file path="$PROJECT_DIR$/target/jenkins-for-test/WEB-INF/jonas-web.xml" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1371824085909" ignored="false" />
     <file path="$PROJECT_DIR$/target/jenkins-for-test/WEB-INF/sun-web.xml" changelist="94a1bb8e-caa9-46de-afb5-eea50f0daa5d" time="1371824085909" ignored="false" />
@@ -103,7 +104,7 @@
     </breakpoint_any>
     <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" line="104" class="com.datalex.jdkparameter.JavaParameterDefinition" package="com.datalex.jdkparameter">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" line="105" class="com.datalex.jdkparameter.JavaParameterDefinition" package="com.datalex.jdkparameter">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -118,7 +119,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" line="97" class="com.datalex.jdkparameter.JavaParameterDefinition" package="com.datalex.jdkparameter">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" line="98" class="com.datalex.jdkparameter.JavaParameterDefinition" package="com.datalex.jdkparameter">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -219,12 +220,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JavaParameterDefinition.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JavaParameterDefinition.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="93" selection-start="634" selection-end="634" vertical-scroll-proportion="0.28526148">
+            <state line="50" column="47" selection-start="1471" selection-end="1471" vertical-scroll-proportion="-4.0526314">
               <folding>
-                <element signature="e#2363#2371#0" expanded="true" />
+                <element signature="e#2347#2355#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -284,10 +285,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaParameterDefinitionTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="JavaParameterDefinitionTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="40" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
+            <state line="41" column="48" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.5744681">
               <folding />
             </state>
           </provider>
@@ -343,11 +344,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterValue/value.jelly" />
         <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly" />
-        <option value="$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/help.html" />
         <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/help-name.html" />
         <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/help-selectableJDKs.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java" />
       </list>
     </option>
   </component>
@@ -998,7 +999,11 @@
       <created>1373635934823</created>
       <updated>1373635934823</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Adding default (WIP)">
+      <created>1373905578789</created>
+      <updated>1373905578789</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1044,8 +1049,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33886793" sideWeight="0.556962" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27396226" sideWeight="0.556962" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.443038" sideWeight="0.49886793" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27396226" sideWeight="0.70745426" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2925457" sideWeight="0.49886793" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1226,13 +1231,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="40" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/help.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="6" selection-start="95" selection-end="95" vertical-scroll-proportion="-1.25">
@@ -1277,10 +1275,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="93" selection-start="634" selection-end="634" vertical-scroll-proportion="0.28526148">
+        <state line="50" column="47" selection-start="1471" selection-end="1471" vertical-scroll-proportion="-4.0526314">
           <folding>
-            <element signature="e#2363#2371#0" expanded="true" />
+            <element signature="e#2347#2355#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="48" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.5744681">
+          <folding />
         </state>
       </provider>
     </entry>

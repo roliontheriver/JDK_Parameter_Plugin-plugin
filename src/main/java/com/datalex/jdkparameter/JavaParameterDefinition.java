@@ -48,16 +48,16 @@ public class JavaParameterDefinition extends ParameterDefinition {
         return result;
     }
 
-    public static String getBaseJDKName(){
-        JDKInstaller.JDKFamilyList baseJDKList = null;
+    public static String getBaseJDK(){
+        JDKInstaller.JDKFamilyList baseJDK = null;
         try{
-        baseJDKList = JDKInstaller.JDKList.all().get(JDKInstaller.JDKList.class).toList();
+        baseJDK = JDKInstaller.JDKList.all().get(JDKInstaller.JDKList.class).toList();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         String result = "";
-        for(JDKInstaller.JDKFamily jdk : baseJDKList.data){
+        for(JDKInstaller.JDKFamily jdk : baseJDK.data){
             result = jdk.name;
         }
 
@@ -86,6 +86,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
         List<String> result = new ArrayList<String>();
         for(JDK jdk : jdkList) {
             result.add(jdk.getName());
+            result.add(baseJDK);
         }
         if (!jdkList.isEmpty())
         result.add(baseJDK);
