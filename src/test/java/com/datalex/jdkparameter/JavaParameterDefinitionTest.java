@@ -1,14 +1,5 @@
 package com.datalex.jdkparameter;
 
-import hudson.tools.JDKInstaller;
-import junit.framework.Assert;
-import org.junit.Rule;
-import org.junit.Test;
-import org.jvnet.hudson.test.JenkinsRule;
-
-import java.io.IOException;
-import java.util.Collection;
-
 /**
  * Created with IntelliJ IDEA.
  * User: barisbatiege
@@ -18,32 +9,32 @@ import java.util.Collection;
  */
 public class JavaParameterDefinitionTest {
 
-    @Rule
-    public JenkinsRule j = new JenkinsRule();
-
-    @Test
-    public void testGetList() throws IOException {
-
-        JDKInstaller.JDKFamilyList jdks = JDKInstaller.JDKList.all().get(JDKInstaller.JDKList.class).toList();
-        System.out.println(jdks.data.length);
-//        System.out.println("Dummy");
-    }
-
-    @Test
-    public void testSomething() {
-        Collection<String> jdkList  = JavaParameterDefinition.getJDKNames();
-        Assert.assertNotNull(jdkList);
-        Assert.assertTrue(jdkList.isEmpty());
-    }
-
-    @Test
-    public void baseJDKNotNullTest(){
-       String baseJDK = JavaParameterDefinition.getBaseJDK();
-        if (baseJDK == null){
-           System.out.println("baseJDK is null");
-        }
-
-    }
+//    @Rule
+//    public JenkinsRule j = new JenkinsRule();
+//
+//    @Test
+//    public void testGetList() throws IOException {
+//
+//        JDKInstaller.JDKFamilyList jdks = JDKInstaller.JDKList.all().get(JDKInstaller.JDKList.class).toList();
+//        System.out.println(jdks.data.length);
+////        System.out.println("Dummy");
+//    }
+//
+//    @Test
+//    public void testSomething() {
+//        Collection<String> jdkList  = JavaParameterDefinition.getJDKNames();
+//        Assert.assertNotNull(jdkList);
+//        Assert.assertTrue(jdkList.isEmpty());
+//    }
+//
+//    @Test
+//    public void baseJDKNotNullTest(){
+//       String baseJDK = JavaParameterDefinition.getBaseJDK();
+//        if (baseJDK == null){
+//           System.out.println("baseJDK is null");
+//        }
+//
+//    }
 
 
 

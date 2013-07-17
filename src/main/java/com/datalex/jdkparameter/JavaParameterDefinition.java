@@ -46,6 +46,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
         for(JDK jdk : jdkList) {
             result.add(jdk.getName());
         }
+        result.add(0, "(Default)");
         return result;
     }
     //gets the list of default Jenkins JDKs
