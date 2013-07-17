@@ -39,6 +39,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
         this.baseJDK = baseJDK;
     }
 
+    //gets the names of configured JDKs
     public static List<String>  getJDKNames(){
         List<JDK> jdkList = jenkins.model.Jenkins.getInstance().getJDKs();
         List<String> result = new ArrayList<String>();
@@ -47,7 +48,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
         }
         return result;
     }
-
+    //gets the list of default Jenkins JDKs
     public static String getBaseJDK(){
         JDKInstaller.JDKFamilyList baseJDK = null;
         try{
@@ -64,12 +65,6 @@ public class JavaParameterDefinition extends ParameterDefinition {
         return result;
     }
 
-    /**
-     * Returns a list of nodes the job could run on. If allowed nodes is empty,
-     * it falls back to all nodes
-     *
-     * @return list of nodenames.
-     */
     public List<String> getAllowedJDKs() {
         return allowedJDKs;
     }
@@ -80,7 +75,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
     }
 
 
-
+    //gets the list of JDKs to put in "selectable JDKs" array in job config, includes the base JDKs from jenkins
     public List<String>  getSelectableJDKNames(){
         List<JDK> jdkList = jenkins.model.Jenkins.getInstance().getJDKs();
         List<String> result = new ArrayList<String>();
@@ -93,6 +88,16 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
         return result;
     }
+
+    //WIP, supposed to get JDK from node and add it to Jenkins default JDKs list for this instance
+    public JDK forNode(Node node, TaskListener log) throws IOException, InterruptedException{
+        return new JDK(getBaseJDK(), translateFor(node, log));
+    }
+
+    private String translateFor(Node node, TaskListener log) {
+        return null;
+    }
+
 
     @Override
     public ParameterValue createValue(StaplerRequest req, JSONObject jo) {

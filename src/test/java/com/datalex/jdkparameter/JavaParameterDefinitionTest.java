@@ -5,7 +5,7 @@ import junit.framework.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.jvnet.hudson.test.JenkinsRule;
-import org.junit.Assert.*;
+
 import java.io.IOException;
 import java.util.Collection;
 
@@ -19,7 +19,7 @@ import java.util.Collection;
 public class JavaParameterDefinitionTest {
 
     @Rule
-    public JenkinsRule j = new JenkinsRule();;
+    public JenkinsRule j = new JenkinsRule();
 
     @Test
     public void testGetList() throws IOException {
@@ -40,7 +40,7 @@ public class JavaParameterDefinitionTest {
     public void baseJDKNotNullTest(){
        String baseJDK = JavaParameterDefinition.getBaseJDK();
         if (baseJDK == null){
-            throw IOException;
+           System.out.println("baseJDK is null");
         }
 
     }
