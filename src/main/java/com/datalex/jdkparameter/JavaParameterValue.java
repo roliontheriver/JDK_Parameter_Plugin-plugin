@@ -1,6 +1,5 @@
 package com.datalex.jdkparameter;
 
-import hudson.EnvVars;
 import hudson.model.AbstractBuild;
 import hudson.model.JDK;
 import hudson.model.ParameterValue;
@@ -35,12 +34,6 @@ public class JavaParameterValue extends ParameterValue {
 
     public void setSelectedJDK(String selectedJDK) {
         this.selectedJDK = selectedJDK;
-    }
-
-    @Override
-    public void buildEnvVars(AbstractBuild<?, ?> build, EnvVars env){
-        String JAVA_HOME="xxxx";
-
     }
 
     @Override

@@ -9,7 +9,7 @@ package com.datalex.jdkparameter;
  */
 public class JavaParameterDefinitionTest {
 
-//    @Rule
+//    @org.junit.Rule
 //    public JenkinsRule j = new JenkinsRule();
 //
 //    @Test

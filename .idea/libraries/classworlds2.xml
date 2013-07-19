@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="classworlds">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/work/plugins/maven-plugin/WEB-INF/classes/classworlds.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

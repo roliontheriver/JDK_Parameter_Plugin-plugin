@@ -26,7 +26,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
     public static final String VERSION = "version";
     public final String defaultJDK;
     public final List<String> allowedJDKs;
-    public final String baseJDK;
+   // List<JDK> allJDKs = jenkins.model.Jenkins.getInstance().getJDKs();
 
 
 
@@ -36,7 +36,6 @@ public class JavaParameterDefinition extends ParameterDefinition {
         super(name, description);
         this.defaultJDK = defaultJDK;
         this.allowedJDKs = allowedJDKs;
-        this.baseJDK = baseJDK;
     }
 
     //gets the names of configured JDKs
@@ -46,25 +45,26 @@ public class JavaParameterDefinition extends ParameterDefinition {
         for(JDK jdk : jdkList) {
             result.add(jdk.getName());
         }
-        result.add(0, "(Default)");
+
+        result.add(0,"(Default)");
         return result;
     }
-    //gets the list of default Jenkins JDKs
-    public static String getBaseJDK(){
-        JDKInstaller.JDKFamilyList baseJDK = null;
-        try{
-        baseJDK = JDKInstaller.JDKList.all().get(JDKInstaller.JDKList.class).toList();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        String result = "";
-        for(JDKInstaller.JDKFamily jdk : baseJDK.data){
-            result = jdk.name;
-        }
-
-        return result;
-    }
+//    //gets the list of default Jenkins JDKs
+//    public static String getBaseJDK(){
+//        JDKInstaller.JDKFamilyList baseJDK = null;
+//        try{
+//        baseJDK = JDKInstaller.JDKList.all().get(JDKInstaller.JDKList.class).toList();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//        String result = "";
+//        for(JDKInstaller.JDKFamily jdk : baseJDK.data){
+//            result = jdk.name;
+//        }
+//
+//        return result;
+//    }
 
     public List<String> getAllowedJDKs() {
         return allowedJDKs;
@@ -82,21 +82,11 @@ public class JavaParameterDefinition extends ParameterDefinition {
         List<String> result = new ArrayList<String>();
         for(JDK jdk : jdkList) {
             result.add(jdk.getName());
-            result.add(baseJDK);
+
         }
-        if (!jdkList.isEmpty())
-        result.add(baseJDK);
-
+        //String allJDKs = result;
+        //result.add(allJDKs);
         return result;
-    }
-
-    //WIP, supposed to get JDK from node and add it to Jenkins default JDKs list for this instance
-    public JDK forNode(Node node, TaskListener log) throws IOException, InterruptedException{
-        return new JDK(getBaseJDK(), translateFor(node, log));
-    }
-
-    private String translateFor(Node node, TaskListener log) {
-        return null;
     }
 
 
