@@ -1,7 +1,6 @@
 package com.datalex.jdkparameter;
 
 import hudson.EnvVars;
-import hudson.Extension;
 import hudson.Launcher;
 import hudson.model.AbstractBuild;
 import hudson.model.AbstractProject;
@@ -33,7 +32,7 @@ public class JavaParameterBuildWrapper extends BuildWrapper {
 
     }
 
-    @Extension
+//    @Extension
     public static class DescriptorImpl extends BuildWrapperDescriptor {
 
         @Override

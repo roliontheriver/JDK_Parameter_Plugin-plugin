@@ -2,16 +2,11 @@ package com.datalex.jdkparameter;
 
 import hudson.Extension;
 import hudson.model.*;
-import hudson.tools.JDKInstaller;
-import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.StaplerRequest;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -32,21 +27,29 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
     @DataBoundConstructor
     public JavaParameterDefinition(String name,String description ,
-                                   String defaultJDK, List<String>allowedJDKs, String baseJDK ){
+                                   String defaultJDK, List<String>allowedJDKs ){
         super(name, description);
         this.defaultJDK = defaultJDK;
-        this.allowedJDKs = allowedJDKs;
+        if (allowedJDKs.contains("(All)") )
+            this.allowedJDKs = getJDKSasStrings();
+        else
+            this.allowedJDKs = allowedJDKs;
     }
 
     //gets the names of configured JDKs
     public static List<String>  getJDKNames(){
+        List<String> result = getJDKSasStrings();
+        result.add(1,"(Default)");
+        result.add(0, "(All)");
+        return result;
+    }
+
+    private static List<String> getJDKSasStrings() {
         List<JDK> jdkList = jenkins.model.Jenkins.getInstance().getJDKs();
         List<String> result = new ArrayList<String>();
         for(JDK jdk : jdkList) {
             result.add(jdk.getName());
         }
-
-        result.add(0,"(Default)");
         return result;
     }
 //    //gets the list of default Jenkins JDKs
@@ -78,12 +81,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
     //gets the list of JDKs to put in "selectable JDKs" array in job config, includes the base JDKs from jenkins
     public List<String>  getSelectableJDKNames(){
-        List<JDK> jdkList = jenkins.model.Jenkins.getInstance().getJDKs();
-        List<String> result = new ArrayList<String>();
-        for(JDK jdk : jdkList) {
-            result.add(jdk.getName());
-
-        }
+        List<String> result = getJDKSasStrings();
         //String allJDKs = result;
         //result.add(allJDKs);
         return result;
