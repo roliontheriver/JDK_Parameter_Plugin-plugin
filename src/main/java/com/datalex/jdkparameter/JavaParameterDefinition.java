@@ -56,6 +56,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
         List<JDKModel> result = getAllJDKModels();
         result.add(1, new JDKModel(Integer.MIN_VALUE, "(Default)", null));
         result.add(0, new JDKModel(Integer.MIN_VALUE + 1,"(All)", null));
+        System.out.println("(All)");
         return result;
     }
 
