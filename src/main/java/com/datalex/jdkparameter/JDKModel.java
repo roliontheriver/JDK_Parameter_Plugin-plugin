@@ -1,7 +1,5 @@
 package com.datalex.jdkparameter;
 
-import hudson.model.JDK;
-
 /**
  * Created with IntelliJ IDEA.
  * User: barisbatiege
@@ -11,37 +9,37 @@ import hudson.model.JDK;
  */
 public class JDKModel {
 
-    protected int id;
-    protected String description;
-    protected JDK jdk;
-
-    public JDKModel(int id, String description, JDK jdk) {
-        this.id = id;
-        this.description = description;
-        this.jdk = jdk;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public JDK getJdk() {
-        return jdk;
-    }
-
-    public void setJdk(JDK jdk) {
-        this.jdk = jdk;
-    }
+//    protected int id;
+//    protected String description;
+//    protected JDK jdk;
+//
+//    public JDKModel(int id, String description, JDK jdk) {
+//        this.id = id;
+//        this.description = description;
+//        this.jdk = jdk;
+//    }
+//
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public void setId(int id) {
+//        this.id = id;
+//    }
+//
+//    public String getDescription() {
+//        return description;
+//    }
+//
+//    public void setDescription(String description) {
+//        this.description = description;
+//    }
+//
+//    public JDK getJdk() {
+//        return jdk;
+//    }
+//
+//    public void setJdk(JDK jdk) {
+//        this.jdk = jdk;
+//    }
 }

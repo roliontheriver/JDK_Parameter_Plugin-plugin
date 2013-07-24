@@ -2,21 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33afe26c-e175-44f5-9ad4-4d26509ca758" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JDKModel.java" afterPath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JDKModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JDK_Parameter_Choice.iml" afterPath="$PROJECT_DIR$/JDK_Parameter_Choice.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" afterPath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly" afterPath="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly" afterPath="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JDK_Parameter_Choice.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374596723905" ignored="false" />
+    <file path="/Dummy.txt" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374671845043" ignored="false" />
     <file path="/JavaParameterDefinitionTest.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374141522329" ignored="false" />
-    <file path="/fragment.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374141535325" ignored="false" />
+    <file path="/fragment.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374671829994" ignored="false" />
     <file path="$PROJECT_DIR$/work/config.xml" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374141564550" ignored="false" />
-    <file path="/JavaParameterDefinition.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374659530106" ignored="false" />
+    <file path="/JavaParameterDefinition.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374671487973" ignored="false" />
     <file path="/config.jelly" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374593026748" ignored="false" />
     <file path="/JDKModel.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374592373396" ignored="false" />
-    <file path="/index.jelly" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374592999488" ignored="false" />
+    <file path="/index.jelly" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374665678672" ignored="false" />
     <file path="/JavaParameterValue.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374657332610" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +73,38 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" line="69" class="com.datalex.jdkparameter.JavaParameterDefinition" package="com.datalex.jdkparameter">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" line="70" class="com.datalex.jdkparameter.JavaParameterDefinition" package="com.datalex.jdkparameter">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -78,70 +114,137 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JavaParameterDefinition.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JavaParameterDefinition.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="62" selection-start="3381" selection-end="3382" vertical-scroll-proportion="3.1">
+            <state line="99" column="89" selection-start="2879" selection-end="2879" vertical-scroll-proportion="-33.72">
               <folding>
-                <element signature="e#2220#2230#0" expanded="true" />
+                <element signature="e#1392#1400#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="value.jelly" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterValue/value.jelly">
+      <file leaf-file-name="PropertyExecutor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/util/PropertyExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="61" selection-start="1255" selection-end="1266" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JDKModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JDKModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="25" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StaplerRequest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/kohsuke/stapler/stapler/1.189/stapler-1.189-sources.jar!/org/kohsuke/stapler/StaplerRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="23" selection-start="2802" selection-end="2802" vertical-scroll-proportion="0.0">
+            <state line="124" column="0" selection-start="3700" selection-end="3700" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#16772#0" expanded="false" />
+                <element signature="e#0#3748#0" expanded="false" />
                 <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JDK_Parameter_Choice.iml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JDK_Parameter_Choice.iml">
+      <file leaf-file-name="UberspectImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/util/introspection/UberspectImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="136" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="313" column="0" selection-start="9823" selection-end="9823" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#11638#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaParameterDefinitionTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java">
+      <file leaf-file-name="JavaParameterBuildWrapper.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="23" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="27" column="77" selection-start="887" selection-end="887" vertical-scroll-proportion="0.47488585">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaParameterValue.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java">
+      <file leaf-file-name="ASTArrayAccess.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/parser/ASTArrayAccess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="55" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="184" column="0" selection-start="5535" selection-end="5535" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#5965#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ASTIdentifier.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/parser/ASTIdentifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="0" selection-start="2515" selection-end="2515" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#2750#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ASTReference.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/parser/ASTReference.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="0" selection-start="2619" selection-end="2619" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#4413#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Jenkins.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3-sources.jar!/jenkins/model/Jenkins.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1621" column="0" selection-start="54286" selection-end="54286" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#135968#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#15054#15075#0" expanded="false" />
+                <element signature="e#15865#16027#0" expanded="false" />
+                <element signature="e#16020#16021#0" expanded="false" />
+                <element signature="e#16239#16445#0" expanded="false" />
+                <element signature="e#16438#16439#0" expanded="false" />
+                <element signature="e#16607#16622#0" expanded="false" />
+                <element signature="e#18235#18241#0" expanded="false" />
+                <element signature="e#19242#19255#0" expanded="false" />
+                <element signature="e#19875#19889#0" expanded="false" />
+                <element signature="e#21442#21450#0" expanded="false" />
+                <element signature="e#21613#21653#0" expanded="false" />
+                <element signature="e#21821#21861#0" expanded="false" />
+                <element signature="e#29394#29565#0" expanded="false" />
+                <element signature="e#29550#29551#0" expanded="false" />
+                <element signature="e#35986#36018#0" expanded="false" />
+                <element signature="e#42614#42644#0" expanded="false" />
+                <element signature="e#45885#45899#0" expanded="false" />
+                <element signature="e#47018#47029#0" expanded="false" />
+                <element signature="e#48525#48533#0" expanded="false" />
+                <element signature="e#48899#48907#0" expanded="false" />
+                <element signature="e#53617#53624#0" expanded="false" />
+                <element signature="e#53842#53853#0" expanded="false" />
+                <element signature="e#55676#55682#0" expanded="false" />
+                <element signature="e#56109#56115#0" expanded="false" />
+                <element signature="e#68288#68320#0" expanded="false" />
+                <element signature="e#68975#69007#0" expanded="false" />
+                <element signature="e#81498#81671#0" expanded="false" />
+                <element signature="e#81660#81661#0" expanded="false" />
+                <element signature="e#81838#83466#0" expanded="false" />
+                <element signature="e#83079#83085#0" expanded="false" />
+                <element signature="e#83455#83456#0" expanded="false" />
+                <element signature="e#83616#83876#0" expanded="false" />
+                <element signature="e#83861#83862#0" expanded="false" />
+                <element signature="e#83945#86317#0" expanded="false" />
+                <element signature="e#86306#86307#0" expanded="false" />
+                <element signature="e#86822#86833#0" expanded="false" />
+                <element signature="e#94151#94188#0" expanded="false" />
+                <element signature="e#94697#94726#0" expanded="false" />
+                <element signature="e#95656#95688#0" expanded="false" />
+                <element signature="e#103451#103459#0" expanded="false" />
+                <element signature="e#103622#103651#0" expanded="false" />
+                <element signature="e#119099#119107#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,9 +252,9 @@
       <file leaf-file-name="index.jelly" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="80" selection-start="2048" selection-end="2048" vertical-scroll-proportion="0.0">
+            <state line="43" column="58" selection-start="2184" selection-end="2184" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1374593000497" expanded="true" signature="1747:1778" placeholder="{...}" />
+                <marker date="1374671305661" expanded="true" signature="1747:1778" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -160,7 +263,7 @@
       <file leaf-file-name="config.jelly" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="55" selection-start="3132" selection-end="3132" vertical-scroll-proportion="0.0">
+            <state line="68" column="74" selection-start="3118" selection-end="3118" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,11 +288,11 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JDKModel.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly" />
         <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly" />
         <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" />
       </list>
     </option>
@@ -580,19 +683,50 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="MavenSettings" />
+    <property name="options.lastSelected" value="project.propDebugger" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Remote.Unnamed">
+    <configuration default="false" name="All in JDK_Parameter_Choice" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JDK_Parameter_Choice" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -706,7 +840,53 @@
       <patterns />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="Unnamed" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="Unnamed" type="Remote" factoryName="Remote">
+      <module name="JDK_Parameter_Choice" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8000" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="8000" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in JDK_Parameter_Choice" />
+      <item index="1" class="java.lang.String" itemvalue="Maven.Unnamed" />
+      <item index="2" class="java.lang.String" itemvalue="Remote.Unnamed" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in JDK_Parameter_Choice" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -752,7 +932,11 @@
       <created>1374596728188</created>
       <updated>1374596728188</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="All functionality except (All) working">
+      <created>1374660554031</created>
+      <updated>1374660554031</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -765,7 +949,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39888424" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5003762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -776,11 +960,11 @@
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981189" sideWeight="0.28591353" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21218961" sideWeight="0.67085075" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21218961" sideWeight="0.71687585" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981189" sideWeight="0.67085075" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32914925" sideWeight="0.49962378" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981189" sideWeight="0.71687585" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28312412" sideWeight="0.49962378" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -829,7 +1013,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Broken at the moment, trying to make hashcode method work" />
+    <option name="LAST_COMMIT_MESSAGE" value="All functionality except (All) working" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -846,41 +1030,20 @@
     <MESSAGE value="Trying to get rid of Build Environments &quot;Select JDK&quot; line" />
     <MESSAGE value="Default and All working" />
     <MESSAGE value="Broken at the moment, trying to make hashcode method work" />
+    <MESSAGE value="All functionality except (All) working" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="13" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JDK_Parameter_Choice.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="136" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/index.jelly">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="22" selection-start="342" selection-end="345" vertical-scroll-proportion="-0.15831135">
@@ -898,29 +1061,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="42" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterValue/value.jelly">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="61" selection-start="1255" selection-end="1266" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="80" selection-start="2048" selection-end="2048" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1374593000497" expanded="true" signature="1747:1778" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
@@ -934,10 +1078,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JDKModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="3" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="55" selection-start="3132" selection-end="3132" vertical-scroll-proportion="0.0">
+        <state line="68" column="74" selection-start="3118" selection-end="3118" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="58" selection-start="2184" selection-end="2184" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1374671305661" expanded="true" signature="1747:1778" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
@@ -946,23 +1109,126 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="55" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0">
+        <state line="46" column="45" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JDKModel.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3-sources.jar!/jenkins/model/Jenkins.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="25" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="1621" column="0" selection-start="54286" selection-end="54286" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#135968#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#15054#15075#0" expanded="false" />
+            <element signature="e#15865#16027#0" expanded="false" />
+            <element signature="e#16020#16021#0" expanded="false" />
+            <element signature="e#16239#16445#0" expanded="false" />
+            <element signature="e#16438#16439#0" expanded="false" />
+            <element signature="e#16607#16622#0" expanded="false" />
+            <element signature="e#18235#18241#0" expanded="false" />
+            <element signature="e#19242#19255#0" expanded="false" />
+            <element signature="e#19875#19889#0" expanded="false" />
+            <element signature="e#21442#21450#0" expanded="false" />
+            <element signature="e#21613#21653#0" expanded="false" />
+            <element signature="e#21821#21861#0" expanded="false" />
+            <element signature="e#29394#29565#0" expanded="false" />
+            <element signature="e#29550#29551#0" expanded="false" />
+            <element signature="e#35986#36018#0" expanded="false" />
+            <element signature="e#42614#42644#0" expanded="false" />
+            <element signature="e#45885#45899#0" expanded="false" />
+            <element signature="e#47018#47029#0" expanded="false" />
+            <element signature="e#48525#48533#0" expanded="false" />
+            <element signature="e#48899#48907#0" expanded="false" />
+            <element signature="e#53617#53624#0" expanded="false" />
+            <element signature="e#53842#53853#0" expanded="false" />
+            <element signature="e#55676#55682#0" expanded="false" />
+            <element signature="e#56109#56115#0" expanded="false" />
+            <element signature="e#68288#68320#0" expanded="false" />
+            <element signature="e#68975#69007#0" expanded="false" />
+            <element signature="e#81498#81671#0" expanded="false" />
+            <element signature="e#81660#81661#0" expanded="false" />
+            <element signature="e#81838#83466#0" expanded="false" />
+            <element signature="e#83079#83085#0" expanded="false" />
+            <element signature="e#83455#83456#0" expanded="false" />
+            <element signature="e#83616#83876#0" expanded="false" />
+            <element signature="e#83861#83862#0" expanded="false" />
+            <element signature="e#83945#86317#0" expanded="false" />
+            <element signature="e#86306#86307#0" expanded="false" />
+            <element signature="e#86822#86833#0" expanded="false" />
+            <element signature="e#94151#94188#0" expanded="false" />
+            <element signature="e#94697#94726#0" expanded="false" />
+            <element signature="e#95656#95688#0" expanded="false" />
+            <element signature="e#103451#103459#0" expanded="false" />
+            <element signature="e#103622#103651#0" expanded="false" />
+            <element signature="e#119099#119107#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/util/PropertyExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="0" selection-start="3700" selection-end="3700" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#3748#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/util/introspection/UberspectImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="313" column="0" selection-start="9823" selection-end="9823" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#11638#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/parser/ASTArrayAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="0" selection-start="5535" selection-end="5535" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#5965#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/parser/ASTIdentifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="2515" selection-end="2515" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#2750#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/parser/ASTReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="0" selection-start="2619" selection-end="2619" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#4413#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="62" selection-start="3381" selection-end="3382" vertical-scroll-proportion="3.1">
+        <state line="99" column="89" selection-start="2879" selection-end="2879" vertical-scroll-proportion="-33.72">
           <folding>
-            <element signature="e#2220#2230#0" expanded="true" />
+            <element signature="e#1392#1400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="77" selection-start="887" selection-end="887" vertical-scroll-proportion="0.47488585">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

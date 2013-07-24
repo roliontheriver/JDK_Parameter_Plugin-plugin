@@ -48,11 +48,11 @@ THE SOFTWARE.
             <j:invokeStatic className="com.datalex.jdkparameter.JavaParameterDefinition" method="getJDKNames" var="allJDKs" />
             <j:forEach var="aJDK" items="${allJDKs}" varStatus="loop">
                 <j:choose>
-                    <j:when test="${instance.defaultJDK.equals(aJDK.id)}">
-                        <option value="${aJDK.id}" selected="selected">${aJDK.description}</option>
+                    <j:when test="${instance.defaultJDK.equals(aJDK)}">
+                        <option value="${aJDK}" selected="selected">${aJDK}</option>
                     </j:when>
                     <j:otherwise>
-                        <option value="${aJDK.id}">${aJDK.description}</option>
+                        <option value="${aJDK}">${aJDK}</option>
                     </j:otherwise>
                 </j:choose>
             </j:forEach>
@@ -66,10 +66,10 @@ THE SOFTWARE.
             <j:forEach var="aJDK" items="${allJDKs}" varStatus="loop">
                 <j:choose>
                     <j:when test="${instance.allowedJDKs.contains(aJDK)}">
-                        <option value="${aJDK.id}" selected="selected">${aJDK.description}</option>
+                        <option value="${aJDK}" selected="selected">${aJDK}</option>
                     </j:when>
                     <j:otherwise>
-                        <option value="${aJDK.id}">${aJDK.description}</option>
+                        <option value="${aJDK}">${aJDK}</option>
                     </j:otherwise>
                 </j:choose>
             </j:forEach>

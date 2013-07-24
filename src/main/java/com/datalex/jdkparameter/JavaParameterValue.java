@@ -42,7 +42,7 @@ public class JavaParameterValue extends ParameterValue {
         List<JDK> jdks = jenkins.model.Jenkins.getInstance().getJDKs();
         JDK selected = null;
         for(JDK jdk : jdks) {
-            if(String.valueOf(jdk.getHome().hashCode()).equals(selectedJDK)) {
+            if(jdk.getName().equalsIgnoreCase(selectedJDK)) {
                 selected = jdk;
             }
         }
