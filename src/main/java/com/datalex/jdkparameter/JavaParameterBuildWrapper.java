@@ -8,6 +8,7 @@ import hudson.model.AbstractProject;
 import hudson.model.BuildListener;
 import hudson.tasks.BuildWrapper;
 import hudson.tasks.BuildWrapperDescriptor;
+import jenkins.model.Jenkins;
 
 import java.io.IOException;
 
@@ -20,9 +21,17 @@ import java.io.IOException;
  */
 public class JavaParameterBuildWrapper extends BuildWrapper {
 
+    private String originalJDK;
+
+    public void restoreOriginalJDK(Jenkins jdk){
+
+
+    }
+
     @Override
     public Environment setUp(AbstractBuild build, Launcher launcher, BuildListener listener) throws IOException, InterruptedException, IOException {
         String jdkValue = (String)build.getBuildVariables().get("jdk");
+
 
         EnvVars env = build.getEnvironment(listener);
         env.overrideAll(build.getBuildVariables());
@@ -32,6 +41,15 @@ public class JavaParameterBuildWrapper extends BuildWrapper {
         return null;
 
     }
+
+    public String getOriginalJDK() {
+        return originalJDK;
+    }
+
+    public void setOriginalJDK(String originalJDK) {
+        this.originalJDK = originalJDK;
+    }
+
 
     @Extension
     public static class DescriptorImpl extends BuildWrapperDescriptor {
