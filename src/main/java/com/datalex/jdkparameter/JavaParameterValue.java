@@ -7,6 +7,7 @@ import hudson.tasks.BuildWrapper;
 import org.kohsuke.stapler.DataBoundConstructor;
 
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
@@ -41,18 +42,20 @@ public class JavaParameterValue extends ParameterValue {
         //this is where all the actions should be performed
         List<JDK> jdks = jenkins.model.Jenkins.getInstance().getJDKs();
         JDK selected = null;
-        String originalJDK="(Default)";
-
+        String originalJDK = null;
         for(JDK jdk : jdks) {
             if(jdk.getName().equalsIgnoreCase(selectedJDK)) {
                 selected = jdk;
+                break;
             }
         }
         try {
-            originalJDK=build.getProject().getJDK()==null?"(Default)":build.getProject().getJDK().getName();
+            originalJDK = build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName();
+            System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!! original JDK here"+ originalJDK);
             build.getProject().setJDK(selected);
+            System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!! new JDK: " + build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName());
         } catch (Exception e) {
-            LOGGER.severe("Could not set the JDK");
+            LOGGER.log(Level.SEVERE, "Could not set the JDK", e);
         }
         JavaParameterBuildWrapper wrapper = new JavaParameterBuildWrapper();
         wrapper.setOriginalJDK(originalJDK);

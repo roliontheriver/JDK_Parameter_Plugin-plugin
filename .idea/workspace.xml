@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33afe26c-e175-44f5-9ad4-4d26509ca758" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JDKModel.java" afterPath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JDKModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JDK_Parameter_Choice.iml" afterPath="$PROJECT_DIR$/JDK_Parameter_Choice.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" afterPath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly" afterPath="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly" afterPath="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JDK_Parameter_Choice.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374671845043" ignored="false" />
+    <file path="/Dummy.txt" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374769232622" ignored="false" />
     <file path="/JavaParameterDefinitionTest.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374141522329" ignored="false" />
     <file path="/fragment.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374671829994" ignored="false" />
     <file path="$PROJECT_DIR$/work/config.xml" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374141564550" ignored="false" />
@@ -21,7 +16,8 @@
     <file path="/config.jelly" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374593026748" ignored="false" />
     <file path="/JDKModel.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374592373396" ignored="false" />
     <file path="/index.jelly" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374665678672" ignored="false" />
-    <file path="/JavaParameterValue.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374657332610" ignored="false" />
+    <file path="/JavaParameterValue.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374768911454" ignored="false" />
+    <file path="/JavaParameterBuildWrapper.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374836944848" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +32,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -72,8 +69,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" line="69" class="com.datalex.jdkparameter.JavaParameterDefinition" package="com.datalex.jdkparameter">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -117,34 +113,44 @@
       <file leaf-file-name="JavaParameterDefinition.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="89" selection-start="2879" selection-end="2879" vertical-scroll-proportion="-33.72">
-              <folding>
-                <element signature="e#1392#1400#0" expanded="true" />
-              </folding>
+            <state line="37" column="36" selection-start="1104" selection-end="1110" vertical-scroll-proportion="-17.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PropertyExecutor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/util/PropertyExecutor.java">
+      <file leaf-file-name="JavaParameterValue.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="0" selection-start="3700" selection-end="3700" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#3748#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state line="42" column="50" selection-start="1210" selection-end="1210" vertical-scroll-proportion="-11.4">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UberspectImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/util/introspection/UberspectImpl.java">
+      <file leaf-file-name="Jenkins.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/target/work/webapp/WEB-INF/lib/jenkins-core-1.480.3.jar!/jenkins/model/Jenkins.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="313" column="0" selection-start="9823" selection-end="9823" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#11638#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state line="650" column="50" selection-start="36618" selection-end="36625" vertical-scroll-proportion="-4.04">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JDKModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JDKModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/jobs/asd/builds/1/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="33" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,7 +158,7 @@
       <file leaf-file-name="JavaParameterBuildWrapper.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="77" selection-start="887" selection-end="887" vertical-scroll-proportion="0.47488585">
+            <state line="41" column="48" selection-start="1419" selection-end="1419" vertical-scroll-proportion="1.7178771">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,14 +166,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ASTArrayAccess.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/parser/ASTArrayAccess.java">
+      <file leaf-file-name="JDK.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/target/work/webapp/WEB-INF/lib/jenkins-core-1.480.3.jar!/hudson/model/JDK.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="0" selection-start="5535" selection-end="5535" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#5965#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state line="15" column="30" selection-start="542" selection-end="544" vertical-scroll-proportion="-3.7">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractProject.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/target/work/webapp/WEB-INF/lib/jenkins-core-1.480.3.jar!/hudson/model/AbstractProject.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="168" column="75" selection-start="8061" selection-end="8061" vertical-scroll-proportion="-2.5">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -176,10 +188,7 @@
         <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/parser/ASTIdentifier.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="74" column="0" selection-start="2515" selection-end="2515" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#2750#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -188,82 +197,6 @@
         <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/parser/ASTReference.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="82" column="0" selection-start="2619" selection-end="2619" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#4413#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Jenkins.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3-sources.jar!/jenkins/model/Jenkins.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1621" column="0" selection-start="54286" selection-end="54286" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#135968#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#15054#15075#0" expanded="false" />
-                <element signature="e#15865#16027#0" expanded="false" />
-                <element signature="e#16020#16021#0" expanded="false" />
-                <element signature="e#16239#16445#0" expanded="false" />
-                <element signature="e#16438#16439#0" expanded="false" />
-                <element signature="e#16607#16622#0" expanded="false" />
-                <element signature="e#18235#18241#0" expanded="false" />
-                <element signature="e#19242#19255#0" expanded="false" />
-                <element signature="e#19875#19889#0" expanded="false" />
-                <element signature="e#21442#21450#0" expanded="false" />
-                <element signature="e#21613#21653#0" expanded="false" />
-                <element signature="e#21821#21861#0" expanded="false" />
-                <element signature="e#29394#29565#0" expanded="false" />
-                <element signature="e#29550#29551#0" expanded="false" />
-                <element signature="e#35986#36018#0" expanded="false" />
-                <element signature="e#42614#42644#0" expanded="false" />
-                <element signature="e#45885#45899#0" expanded="false" />
-                <element signature="e#47018#47029#0" expanded="false" />
-                <element signature="e#48525#48533#0" expanded="false" />
-                <element signature="e#48899#48907#0" expanded="false" />
-                <element signature="e#53617#53624#0" expanded="false" />
-                <element signature="e#53842#53853#0" expanded="false" />
-                <element signature="e#55676#55682#0" expanded="false" />
-                <element signature="e#56109#56115#0" expanded="false" />
-                <element signature="e#68288#68320#0" expanded="false" />
-                <element signature="e#68975#69007#0" expanded="false" />
-                <element signature="e#81498#81671#0" expanded="false" />
-                <element signature="e#81660#81661#0" expanded="false" />
-                <element signature="e#81838#83466#0" expanded="false" />
-                <element signature="e#83079#83085#0" expanded="false" />
-                <element signature="e#83455#83456#0" expanded="false" />
-                <element signature="e#83616#83876#0" expanded="false" />
-                <element signature="e#83861#83862#0" expanded="false" />
-                <element signature="e#83945#86317#0" expanded="false" />
-                <element signature="e#86306#86307#0" expanded="false" />
-                <element signature="e#86822#86833#0" expanded="false" />
-                <element signature="e#94151#94188#0" expanded="false" />
-                <element signature="e#94697#94726#0" expanded="false" />
-                <element signature="e#95656#95688#0" expanded="false" />
-                <element signature="e#103451#103459#0" expanded="false" />
-                <element signature="e#103622#103651#0" expanded="false" />
-                <element signature="e#119099#119107#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jelly" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="58" selection-start="2184" selection-end="2184" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1374671305661" expanded="true" signature="1747:1778" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.jelly" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="74" selection-start="3118" selection-end="3118" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -289,11 +222,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JDKModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly" />
         <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly" />
         <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java" />
       </list>
     </option>
   </component>
@@ -387,10 +320,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="-4" />
-    <option name="width" value="1377" />
-    <option name="height" value="865" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1375" />
+    <option name="height" value="836" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -420,7 +353,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -452,36 +385,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JDK_Parameter_Choice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JDK_Parameter_Choice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdkparameter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -498,152 +401,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JDK_Parameter_Choice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JDK_Parameter_Choice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JDK_Parameter_Choice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JDK_Parameter_Choice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JDK_Parameter_Choice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JDK_Parameter_Choice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JDK_Parameter_Choice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JDK_Parameter_Choice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datalex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdkparameter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaParameterValue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JDK_Parameter_Choice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JDK_Parameter_Choice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datalex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdkparameter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaParameterDefinition" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -675,7 +432,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -686,6 +443,7 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propDebugger" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/work/webapp/WEB-INF/lib/bcprov-jdk15-140.jar!/" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -693,9 +451,9 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Remote.Unnamed">
     <configuration default="false" name="All in JDK_Parameter_Choice" type="JUnit" factoryName="JUnit" temporary="true">
@@ -763,19 +521,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -802,6 +547,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -878,9 +636,9 @@
       <method />
     </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.All in JDK_Parameter_Choice" />
-      <item index="1" class="java.lang.String" itemvalue="Maven.Unnamed" />
-      <item index="2" class="java.lang.String" itemvalue="Remote.Unnamed" />
+      <item index="0" class="java.lang.String" itemvalue="Maven.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="Remote.Unnamed" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.All in JDK_Parameter_Choice" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -936,11 +694,15 @@
       <created>1374660554031</created>
       <updated>1374660554031</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Trying to get restoreOriginalJDK to work. Currently working on buildwrapper">
+      <created>1374769239082</created>
+      <updated>1374769239082</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1377" height="865" extended-state="6" />
+    <frame x="65" y="24" width="1375" height="836" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -960,11 +722,11 @@
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981189" sideWeight="0.28591353" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21218961" sideWeight="0.71687585" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21250942" sideWeight="0.70494187" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981189" sideWeight="0.71687585" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28312412" sideWeight="0.49962378" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20422004" sideWeight="0.70494187" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29505813" sideWeight="0.49962378" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1013,7 +775,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="All functionality except (All) working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to get restoreOriginalJDK to work. Currently working on buildwrapper" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1031,6 +793,7 @@
     <MESSAGE value="Default and All working" />
     <MESSAGE value="Broken at the moment, trying to make hashcode method work" />
     <MESSAGE value="All functionality except (All) working" />
+    <MESSAGE value="Trying to get restoreOriginalJDK to work. Currently working on buildwrapper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1044,189 +807,122 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="342" selection-end="345" vertical-scroll-proportion="-0.15831135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/kohsuke/stapler/stapler/1.189/stapler-1.189-sources.jar!/org/kohsuke/stapler/StaplerRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="23" selection-start="2802" selection-end="2802" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#16772#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterValue/value.jelly">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="61" selection-start="1255" selection-end="1266" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="23" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JDKModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="3" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="74" selection-start="3118" selection-end="3118" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="58" selection-start="2184" selection-end="2184" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1374671305661" expanded="true" signature="1747:1778" placeholder="{...}" />
+            <marker date="1374671305661" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="45" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3-sources.jar!/jenkins/model/Jenkins.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1621" column="0" selection-start="54286" selection-end="54286" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#135968#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#15054#15075#0" expanded="false" />
-            <element signature="e#15865#16027#0" expanded="false" />
-            <element signature="e#16020#16021#0" expanded="false" />
-            <element signature="e#16239#16445#0" expanded="false" />
-            <element signature="e#16438#16439#0" expanded="false" />
-            <element signature="e#16607#16622#0" expanded="false" />
-            <element signature="e#18235#18241#0" expanded="false" />
-            <element signature="e#19242#19255#0" expanded="false" />
-            <element signature="e#19875#19889#0" expanded="false" />
-            <element signature="e#21442#21450#0" expanded="false" />
-            <element signature="e#21613#21653#0" expanded="false" />
-            <element signature="e#21821#21861#0" expanded="false" />
-            <element signature="e#29394#29565#0" expanded="false" />
-            <element signature="e#29550#29551#0" expanded="false" />
-            <element signature="e#35986#36018#0" expanded="false" />
-            <element signature="e#42614#42644#0" expanded="false" />
-            <element signature="e#45885#45899#0" expanded="false" />
-            <element signature="e#47018#47029#0" expanded="false" />
-            <element signature="e#48525#48533#0" expanded="false" />
-            <element signature="e#48899#48907#0" expanded="false" />
-            <element signature="e#53617#53624#0" expanded="false" />
-            <element signature="e#53842#53853#0" expanded="false" />
-            <element signature="e#55676#55682#0" expanded="false" />
-            <element signature="e#56109#56115#0" expanded="false" />
-            <element signature="e#68288#68320#0" expanded="false" />
-            <element signature="e#68975#69007#0" expanded="false" />
-            <element signature="e#81498#81671#0" expanded="false" />
-            <element signature="e#81660#81661#0" expanded="false" />
-            <element signature="e#81838#83466#0" expanded="false" />
-            <element signature="e#83079#83085#0" expanded="false" />
-            <element signature="e#83455#83456#0" expanded="false" />
-            <element signature="e#83616#83876#0" expanded="false" />
-            <element signature="e#83861#83862#0" expanded="false" />
-            <element signature="e#83945#86317#0" expanded="false" />
-            <element signature="e#86306#86307#0" expanded="false" />
-            <element signature="e#86822#86833#0" expanded="false" />
-            <element signature="e#94151#94188#0" expanded="false" />
-            <element signature="e#94697#94726#0" expanded="false" />
-            <element signature="e#95656#95688#0" expanded="false" />
-            <element signature="e#103451#103459#0" expanded="false" />
-            <element signature="e#103622#103651#0" expanded="false" />
-            <element signature="e#119099#119107#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/util/PropertyExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="124" column="0" selection-start="3700" selection-end="3700" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#3748#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/util/introspection/UberspectImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="313" column="0" selection-start="9823" selection-end="9823" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#11638#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/parser/ASTArrayAccess.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="184" column="0" selection-start="5535" selection-end="5535" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#5965#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/parser/ASTIdentifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="0" selection-start="2515" selection-end="2515" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#2750#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jexl/1.1-jenkins-20111212/commons-jexl-1.1-jenkins-20111212-sources.jar!/org/apache/commons/jexl/parser/ASTReference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="0" selection-start="2619" selection-end="2619" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#4413#0" expanded="false" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JDKModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="89" selection-start="2879" selection-end="2879" vertical-scroll-proportion="-33.72">
-          <folding>
-            <element signature="e#1392#1400#0" expanded="true" />
-          </folding>
+        <state line="37" column="36" selection-start="1104" selection-end="1110" vertical-scroll-proportion="-17.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="50" selection-start="1210" selection-end="1210" vertical-scroll-proportion="-11.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/work/webapp/WEB-INF/lib/jenkins-core-1.480.3.jar!/jenkins/model/Jenkins.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="650" column="50" selection-start="36618" selection-end="36625" vertical-scroll-proportion="-4.04">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/work/webapp/WEB-INF/lib/jenkins-core-1.480.3.jar!/hudson/model/JDK.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="30" selection-start="542" selection-end="544" vertical-scroll-proportion="-3.7">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/work/webapp/WEB-INF/lib/jenkins-core-1.480.3.jar!/hudson/model/AbstractProject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="75" selection-start="8061" selection-end="8061" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/jobs/asd/builds/1/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="33" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterBuildWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="77" selection-start="887" selection-end="887" vertical-scroll-proportion="0.47488585">
+        <state line="41" column="48" selection-start="1419" selection-end="1419" vertical-scroll-proportion="1.7178771">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
