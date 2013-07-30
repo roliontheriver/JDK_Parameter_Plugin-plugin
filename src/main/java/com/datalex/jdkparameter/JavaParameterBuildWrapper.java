@@ -1,13 +1,10 @@
 package com.datalex.jdkparameter;
 
-import hudson.Extension;
 import hudson.Launcher;
 import hudson.model.AbstractBuild;
-import hudson.model.AbstractProject;
 import hudson.model.BuildListener;
 import hudson.model.JDK;
 import hudson.tasks.BuildWrapper;
-import hudson.tasks.BuildWrapperDescriptor;
 
 import java.io.IOException;
 
@@ -33,10 +30,6 @@ public class JavaParameterBuildWrapper extends BuildWrapper {
     @Override
     public Environment setUp(AbstractBuild build, Launcher launcher, BuildListener listener) throws IOException, InterruptedException, IOException {
 
-//        JDK defaultJDK = new JDK("(Default)", null);
-//            System.out.println("Current JDK here"+ build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName());
-//            System.out.println("Restoring original JDK here"+ getOriginalJDK());
-
         return new Environment() {
 
             @Override
@@ -54,21 +47,5 @@ public class JavaParameterBuildWrapper extends BuildWrapper {
                 return true;
             }
         };
-    }
-
-
-    @Extension
-    public static class DescriptorImpl extends BuildWrapperDescriptor {
-
-        @Override
-        public String getDisplayName() {
-            return "Select JDK to be used";
-        }
-
-        @Override
-        public boolean isApplicable(AbstractProject<?, ?> item) {
-            return true;
-        }
-
     }
 }

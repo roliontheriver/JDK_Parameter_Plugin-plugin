@@ -50,9 +50,7 @@ public class JavaParameterValue extends ParameterValue {
         }
         try {
             originalJDK = build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName();
-                System.out.println("Original JDK here"+ originalJDK);
             build.getProject().setJDK(selected);
-                System.out.println("New JDK: " + build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName());
         } catch (Exception e) {
             LOGGER.log(Level.SEVERE, "Could not set the JDK", e);
         }
