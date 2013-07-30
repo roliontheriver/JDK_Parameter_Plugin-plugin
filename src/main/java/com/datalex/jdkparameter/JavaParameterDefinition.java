@@ -7,6 +7,7 @@ import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.StaplerRequest;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -19,6 +20,8 @@ import java.util.List;
 public class JavaParameterDefinition extends ParameterDefinition {
 
     public static final String VERSION = "version";
+    public static final String DEFAULT_JDK = "(Default)";
+    public static final String ALL_JDK = "(All)";
     public final String defaultJDK;
     public final List<String> allowedJDKs;
     List<JDK> allJDKs = jenkins.model.Jenkins.getInstance().getJDKs();
@@ -30,14 +33,18 @@ public class JavaParameterDefinition extends ParameterDefinition {
                                    String defaultJDK, List<String>allowedJDKs ){
         super(name, description);
         this.defaultJDK = defaultJDK;
-        this.allowedJDKs = allowedJDKs;
+        if(allowedJDKs.contains(ALL_JDK)) {
+            this.allowedJDKs = Arrays.asList(ALL_JDK);
+        } else {
+            this.allowedJDKs = allowedJDKs;
+        }
     }
 
     //gets the names of configured JDKs
     public static List<String>  getJDKNames(){
         List<String> result = getJDKSasStrings();
-        result.add(0,"(Default)");
-        result.add(0, "(All)");
+        result.add(0, DEFAULT_JDK);
+        result.add(0, ALL_JDK);
         return result;
     }
 
@@ -49,31 +56,18 @@ public class JavaParameterDefinition extends ParameterDefinition {
         }
         return result;
     }
-//    //gets the list of default Jenkins JDKs
-//    public static String getBaseJDK(){
-//        JDKInstaller.JDKFamilyList baseJDK = null;
-//        try{
-//        baseJDK = JDKInstaller.JDKList.all().get(JDKInstaller.JDKList.class).toList();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//
-//        String result = "";
-//        for(JDKInstaller.JDKFamily jdk : baseJDK.data){
-//            result = jdk.name;
-//        }
-//
-//        return result;
-//    }
 
     public List<String> getAllowedJDKs() {
-        if (allowedJDKs.contains("(All)") ) {
+        return allowedJDKs;
+    }
+
+
+    public List<String> getDisplayableJDKs() {
+        if (allowedJDKs.contains(ALL_JDK) ) {
             return getJDKSasStrings();
         } else {
             return allowedJDKs;
         }
-
-
     }
 
 
@@ -85,8 +79,6 @@ public class JavaParameterDefinition extends ParameterDefinition {
     //gets the list of JDKs to put in "selectable JDKs" array in job config, includes the base JDKs from jenkins
     public List<String>  getSelectableJDKNames(){
         List<String> result = getJDKSasStrings();
-//        String allJDKs = result;
-//        result.add(allJDKs);
         return result;
     }
 

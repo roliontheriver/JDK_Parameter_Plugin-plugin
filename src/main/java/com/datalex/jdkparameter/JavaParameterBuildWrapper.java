@@ -1,6 +1,5 @@
 package com.datalex.jdkparameter;
 
-import hudson.EnvVars;
 import hudson.Extension;
 import hudson.Launcher;
 import hudson.model.AbstractBuild;
@@ -35,8 +34,8 @@ public class JavaParameterBuildWrapper extends BuildWrapper {
     @Override
     public Environment setUp(AbstractBuild build, Launcher launcher, BuildListener listener) throws IOException, InterruptedException, IOException {
         JDK defaultJDK = new JDK("(Default)", null);
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!! current JDK here"+ build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName());
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!! restoring original JDK here"+ getOriginalJDK());
+            System.out.println("Current JDK here"+ build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName());
+            System.out.println("Restoring original JDK here"+ getOriginalJDK());
         List<JDK> jdks = jenkins.model.Jenkins.getInstance().getJDKs();
         jdks.add(defaultJDK);
         JDK original = null;
@@ -46,12 +45,9 @@ public class JavaParameterBuildWrapper extends BuildWrapper {
             }
         }
         build.getProject().setJDK(original);
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!! current JDK after change here"+ build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName());
-
-        EnvVars env = build.getEnvironment(listener);
-        env.overrideAll(build.getBuildVariables());
-
-        return null;
+            System.out.println("Current JDK after change here"+ build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName());
+            return new Environment() {
+        };
     }
 
         @Extension

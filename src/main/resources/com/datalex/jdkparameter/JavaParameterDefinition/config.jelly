@@ -26,22 +26,9 @@ THE SOFTWARE.
 <!--<?jelly escape-by-default='true'?>-->
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:f="/lib/form">
 
-    <!--<st:once>-->
-        <!--<script type="text/javascript" src="${resURL}/plugin/JDK_Parameter_Choice/lib/JDKParameter.js" />-->
-    <!--</st:once>-->
-    <!--<script >-->
-    <!--</script>	-->
-
     <f:entry title="${%Name}" field="name">
 		<f:textbox name="parameter.name" value="${instance.name}" />
 	</f:entry>
-
-    <!--<f:entry title="Possible JDKs" description="${%SelectableJDKs}"></f:entry>-->
-
-    <!--<f:entry title="${%Description}" >-->
-        <!--<f:textarea name="parameter.description" value="${instance.description}" />-->
-    <!--</f:entry>-->
-
 
     <f:entry title="Default JDK" description="${%defaultJDK}" field="defaultJDK">
         <select name="defaultJDK">

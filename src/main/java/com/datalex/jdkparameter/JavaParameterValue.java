@@ -39,7 +39,6 @@ public class JavaParameterValue extends ParameterValue {
 
     @Override
     public BuildWrapper createBuildWrapper(AbstractBuild<?,?> build) {
-        //this is where all the actions should be performed
         List<JDK> jdks = jenkins.model.Jenkins.getInstance().getJDKs();
         JDK selected = null;
         String originalJDK = null;
@@ -51,15 +50,15 @@ public class JavaParameterValue extends ParameterValue {
         }
         try {
             originalJDK = build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName();
-            System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!! original JDK here"+ originalJDK);
+                System.out.println("Original JDK here"+ originalJDK);
             build.getProject().setJDK(selected);
-            System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!! new JDK: " + build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName());
+                System.out.println("New JDK: " + build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName());
         } catch (Exception e) {
             LOGGER.log(Level.SEVERE, "Could not set the JDK", e);
         }
         JavaParameterBuildWrapper wrapper = new JavaParameterBuildWrapper();
         wrapper.setOriginalJDK(originalJDK);
-        return wrapper;
+         return wrapper;
     }
 
 }
