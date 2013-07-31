@@ -56,7 +56,7 @@ public class JavaParameterValue extends ParameterValue {
         }
         JavaParameterBuildWrapper wrapper = new JavaParameterBuildWrapper();
         wrapper.setOriginalJDK(originalJDK);
-         return wrapper;
+        return wrapper;
     }
 
 }

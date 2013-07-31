@@ -19,12 +19,11 @@ import java.util.List;
  */
 public class JavaParameterDefinition extends ParameterDefinition {
 
-    public static final String VERSION = "version";
     public static final String DEFAULT_JDK = "(Default)";
     public static final String ALL_JDK = "(All)";
     public final String defaultJDK;
     public final List<String> allowedJDKs;
-    List<JDK> allJDKs = jenkins.model.Jenkins.getInstance().getJDKs();
+
 
 
 
