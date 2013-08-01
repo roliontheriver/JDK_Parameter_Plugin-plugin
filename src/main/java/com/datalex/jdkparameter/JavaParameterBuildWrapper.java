@@ -41,9 +41,8 @@ public class JavaParameterBuildWrapper extends BuildWrapper {
                         original = jdk;
                     }
                 }
-                original = original == null? new JDK("(Default)", null) : original;
+                original = (original == null ? new JDK("(Default)", null) : original);
                 build.getProject().setJDK(original);
-                System.out.println("Current JDK after change here"+ build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName());
                 return true;
             }
         };

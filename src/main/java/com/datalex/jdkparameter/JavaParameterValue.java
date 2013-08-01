@@ -6,7 +6,6 @@ import hudson.model.ParameterValue;
 import hudson.tasks.BuildWrapper;
 import org.kohsuke.stapler.DataBoundConstructor;
 
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -39,14 +38,16 @@ public class JavaParameterValue extends ParameterValue {
 
     @Override
     public BuildWrapper createBuildWrapper(AbstractBuild<?,?> build) {
-        List<JDK> jdks = jenkins.model.Jenkins.getInstance().getJDKs();
         JDK selected = null;
         String originalJDK = null;
-        for(JDK jdk : jdks) {
-            if(jdk.getName().equalsIgnoreCase(selectedJDK)) {
+        for(JDK jdk : jenkins.model.Jenkins.getInstance().getJDKs()) {
+            if(jdk.getName().equalsIgnoreCase(selectedJDK))  {
                 selected = jdk;
                 break;
             }
+        }
+        if(selected==null ) {
+            selected = new JDK("(Default)",null);
         }
         try {
             originalJDK = build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName();
@@ -60,4 +61,5 @@ public class JavaParameterValue extends ParameterValue {
     }
 
 }
+
 
