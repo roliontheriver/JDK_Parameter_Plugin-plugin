@@ -43,7 +43,13 @@ public class JavaParameterDefinition extends ParameterDefinition {
     public static List<String>  getJDKNames(){
         List<String> result = getJDKSasStrings();
         result.add(0, DEFAULT_JDK);
+        result.add(0, ALL_JDK);
+        return result;
+    }
 
+    public static List<String> getJDKNamesDefault(){
+        List<String> result = getJDKSasStrings();
+        result.add(0,DEFAULT_JDK);
         return result;
     }
 
@@ -78,7 +84,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
     //gets the list of JDKs to put in "selectable JDKs" array in job config, includes the base JDKs from jenkins
     public List<String>  getSelectableJDKNames(){
         List<String> result = getJDKSasStrings();
-        result.add(0, ALL_JDK);
+
         return result;
     }
 

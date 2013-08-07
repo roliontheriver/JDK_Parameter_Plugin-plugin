@@ -32,7 +32,7 @@ THE SOFTWARE.
 
     <f:entry title="Default JDK" description="${%defaultJDK}" field="defaultJDK">
         <select name="defaultJDK">
-            <j:invokeStatic className="com.datalex.jdkparameter.JavaParameterDefinition" method="getJDKNames" var="allJDKs" />
+            <j:invokeStatic className="com.datalex.jdkparameter.JavaParameterDefinition" method="getJDKNamesDefault" var="allJDKs" />
             <j:forEach var="aJDK" items="${allJDKs}" varStatus="loop">
                 <j:choose>
                     <j:when test="${instance.defaultJDK.equals(aJDK)}">
