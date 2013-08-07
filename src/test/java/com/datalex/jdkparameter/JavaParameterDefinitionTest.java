@@ -1,12 +1,11 @@
 package com.datalex.jdkparameter;
 
-import hudson.tools.JDKInstaller;
 import junit.framework.Assert;
 import org.junit.Test;
 import org.jvnet.hudson.test.JenkinsRule;
 
-import java.io.IOException;
 import java.util.Collection;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,26 +15,24 @@ import java.util.Collection;
  * To change this template use File | Settings | File Templates.
  */
 public class JavaParameterDefinitionTest {
-//
-//    @org.junit.Rule
-//    public JenkinsRule j = new JenkinsRule();
-//
-//    @Test
-//    public void testGetList() throws IOException {
-//
-//        JDKInstaller.JDKFamilyList jdks = JDKInstaller.JDKList.all().get(JDKInstaller.JDKList.class).toList();
-//        System.out.println(jdks.data.length);
-////        System.out.println("Dummy");
-//    }
-//
-//    @Test
-//    public void testSomething() {
-//        Collection<String> jdkList  = JavaParameterDefinition.getJDKNames();
-//        Assert.assertNotNull(jdkList);
-//        Assert.assertTrue(jdkList.isEmpty());
-//    }
-//
-//
+
+    @org.junit.Rule
+    public JenkinsRule j = new JenkinsRule();
+
+    @Test
+    public void testSomething() {
+        Collection<String> jdkList  = JavaParameterDefinition.getJDKNames();
+        Assert.assertNotNull(jdkList);
+        Assert.assertTrue(jdkList.isEmpty());
+    }
+
+    @Test
+    public void testGetJDKNames(){
+        List<String> JDKs = JavaParameterDefinition.getJDKNames();
+        Assert.assertNotNull();
+    }
+
+
 
 
 

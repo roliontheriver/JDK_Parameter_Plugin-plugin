@@ -18,6 +18,7 @@ import java.io.IOException;
 public class JavaParameterBuildWrapper extends BuildWrapper {
 
     private String originalJDK;
+    private boolean jdkIsAvailable;
 
     public String getOriginalJDK() {
         return originalJDK;
@@ -25,6 +26,14 @@ public class JavaParameterBuildWrapper extends BuildWrapper {
 
     public void setOriginalJDK(String originalJDK) {
         this.originalJDK = originalJDK;
+    }
+
+    public boolean isJdkIsAvailable() {
+        return jdkIsAvailable;
+    }
+
+    public void setJdkIsAvailable(boolean jdkIsAvailable) {
+        this.jdkIsAvailable = jdkIsAvailable;
     }
 
     @Override
@@ -39,8 +48,14 @@ public class JavaParameterBuildWrapper extends BuildWrapper {
                 for(JDK jdk : jenkins.model.Jenkins.getInstance().getJDKs()) {
                     if(jdk.getName().equalsIgnoreCase(getOriginalJDK())) {
                         original = jdk;
+                        break;
                     }
                 }
+                if (!jdkIsAvailable){
+                    listener.getLogger().println("[JDK Parameter]: The selected JDK is not available.");
+                }
+
+                listener.getLogger().println("[JDK Parameter]: Restored job JDK");
                 original = (original == null ? new JDK("(Default)", null) : original);
                 build.getProject().setJDK(original);
                 return true;

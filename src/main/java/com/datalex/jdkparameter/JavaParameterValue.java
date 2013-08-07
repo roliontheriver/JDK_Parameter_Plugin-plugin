@@ -40,25 +40,26 @@ public class JavaParameterValue extends ParameterValue {
     public BuildWrapper createBuildWrapper(AbstractBuild<?,?> build) {
         JDK selected = null;
         String originalJDK = null;
+        boolean jdkIsAvailable = false;
+        selected = new JDK("(Default)",null);
+
         for(JDK jdk : jenkins.model.Jenkins.getInstance().getJDKs()) {
             if(jdk.getName().equalsIgnoreCase(selectedJDK))  {
                 selected = jdk;
+                jdkIsAvailable = true;
                 break;
             }
         }
-        if(selected==null ) {
-            selected = new JDK("(Default)",null);
-        }
+
         try {
             originalJDK = build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName();
             build.getProject().setJDK(selected);
-            LOGGER.info( "[JDK Parameter]: Setting JDK to " + selected);
-
         } catch (Exception e) {
             LOGGER.log(Level.SEVERE, "[JDK Parameter]: Could not set the JDK", e);
         }
         JavaParameterBuildWrapper wrapper = new JavaParameterBuildWrapper();
         wrapper.setOriginalJDK(originalJDK);
+        wrapper.setJdkIsAvailable(jdkIsAvailable);
         return wrapper;
     }
 
