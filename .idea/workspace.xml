@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33afe26c-e175-44f5-9ad4-4d26509ca758" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JDK_Parameter_Choice.iml" afterPath="$PROJECT_DIR$/JDK_Parameter_Choice.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JDK_Parameter_Choice.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1375953846179" ignored="false" />
+    <file path="/Dummy.txt" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1375954187429" ignored="false" />
     <file path="/JavaParameterDefinitionTest.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1375447921306" ignored="false" />
     <file path="/fragment.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374671829994" ignored="false" />
     <file path="/JavaParameterDefinition.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1375886323719" ignored="false" />
@@ -16,6 +17,7 @@
     <file path="/index.jelly" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1375101837640" ignored="false" />
     <file path="/JavaParameterValue.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1375870787851" ignored="false" />
     <file path="/JavaParameterBuildWrapper.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1375873827355" ignored="false" />
+    <file path="/pom.xml" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1375955930503" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,10 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaParameterDefinitionTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JavaParameterDefinitionTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="3" selection-start="242" selection-end="698" vertical-scroll-proportion="0.4308094">
+            <state line="11" column="3" selection-start="242" selection-end="698" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -147,22 +149,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuildWrapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3-sources.jar!/hudson/tasks/BuildWrapper.java">
+      <file leaf-file-name="index.jelly" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="17" selection-start="3156" selection-end="3156" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="28" column="36" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1375101837746" expanded="true" signature="1747:1778" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.jelly" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/index.jelly">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="42" selection-start="2172" selection-end="2172" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1375101837746" expanded="true" signature="1747:1778" placeholder="{...}" />
-              </folding>
+            <state line="5" column="53" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="20" selection-start="442" selection-end="442" vertical-scroll-proportion="0.527027">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -201,6 +212,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly" />
         <option value="$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -892,7 +904,11 @@
       <created>1375953860986</created>
       <updated>1375953860986</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Feature complete">
+      <created>1375954191257</created>
+      <updated>1375954191257</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1003,20 +1019,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="55" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3-sources.jar!/hudson/tasks/BuildWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="17" selection-start="3156" selection-end="3156" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="42" selection-start="2172" selection-end="2172" vertical-scroll-proportion="0.0">
@@ -1048,40 +1050,11 @@
         <state line="82" column="0" selection-start="2619" selection-end="2619" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.480.3/jenkins-core-1.480.3-sources.jar!/hudson/tasks/BuildWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="17" selection-start="3156" selection-end="3156" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="42" selection-start="2172" selection-end="2172" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1375101837746" expanded="true" signature="1747:1778" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="43" selection-start="3032" selection-end="3032" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java">
@@ -1114,7 +1087,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/datalex/jdkparameter/JavaParameterDefinitionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="3" selection-start="242" selection-end="698" vertical-scroll-proportion="0.4308094">
+        <state line="11" column="3" selection-start="242" selection-end="698" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.jelly">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="43" selection-start="3032" selection-end="3032" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/datalex/jdkparameter/JavaParameterDefinition/index.jelly">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="36" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1375101837746" expanded="true" signature="1747:1778" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/index.jelly">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="53" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="20" selection-start="442" selection-end="442" vertical-scroll-proportion="0.527027">
           <folding />
         </state>
       </provider>

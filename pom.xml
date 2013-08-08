@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>JDK_Parameter_Choice</artifactId>
-	<version>Alpha</version>
+	<version>Beta</version>
 
 	<packaging>hpi</packaging>
 
