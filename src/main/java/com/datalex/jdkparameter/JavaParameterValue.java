@@ -41,7 +41,7 @@ public class JavaParameterValue extends ParameterValue {
         JDK selected = null;
         String originalJDK = null;
         boolean jdkIsAvailable = false;
-        selected = new JDK("(Default)",null);
+        selected = new JDK(JavaParameterDefinition.DEFAULT_JDK,null);
 
         for(JDK jdk : jenkins.model.Jenkins.getInstance().getJDKs()) {
             if(jdk.getName().equalsIgnoreCase(selectedJDK))  {
@@ -51,8 +51,12 @@ public class JavaParameterValue extends ParameterValue {
             }
         }
 
+        if (selectedJDK.equals(JavaParameterDefinition.DEFAULT_JDK)){
+            jdkIsAvailable = true;
+        }
+
         try {
-            originalJDK = build.getProject().getJDK() == null ? "(Default)" : build.getProject().getJDK().getName();
+            originalJDK = build.getProject().getJDK() == null ? JavaParameterDefinition.DEFAULT_JDK : build.getProject().getJDK().getName();
             build.getProject().setJDK(selected);
         } catch (Exception e) {
             LOGGER.log(Level.SEVERE, "[JDK Parameter]: Could not set the JDK", e);

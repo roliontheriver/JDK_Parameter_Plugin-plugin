@@ -22,11 +22,25 @@ public class JavaParameterDefinitionTest {
 //    @Test
 //    public void testGetJDKNames(){
 //        List<String> JDKs = JavaParameterDefinition.getJDKNames();
-//        Assert.assertNotNull();
+//        Assert.assertNotNull(JDKs);
 //    }
-
-
-
+//
+//    @Test
+//    public void testGetJDKAsString(){
+//         List<String> getJDKSasStrings = JavaParameterDefinition.getJDKSasStrings ();
+//         Assert.assertNotNull(getJDKSasStrings);
+//     }
+//
+//    @Test
+//    public void testGetJDKNamesDefault(){
+//        List<String> getJDKNamesDefault = JavaParameterDefinition.getJDKNamesDefault();
+//        try{
+//            getJDKNamesDefault.contains("(Default)");
+//        }
+//        catch (IllegalArgumentException iae){
+//
+//        }
+//    }
 
 
 }

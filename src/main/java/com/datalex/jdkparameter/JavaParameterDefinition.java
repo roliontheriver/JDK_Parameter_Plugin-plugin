@@ -1,14 +1,14 @@
 package com.datalex.jdkparameter;
 
 import hudson.Extension;
-import hudson.model.*;
+import hudson.model.JDK;
+import hudson.model.ParameterDefinition;
+import hudson.model.ParameterValue;
 import net.sf.json.JSONObject;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.StaplerRequest;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -49,11 +49,11 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
     public static List<String> getJDKNamesDefault(){
         List<String> result = getJDKSasStrings();
-        result.add(0,DEFAULT_JDK);
+        result.add(0, DEFAULT_JDK);
         return result;
     }
 
-    private static List<String> getJDKSasStrings() {
+    protected static List<String> getJDKSasStrings() {
         List<JDK> jdkList = jenkins.model.Jenkins.getInstance().getJDKs();
         List<String> result = new ArrayList<String>();
         for(JDK jdk : jdkList) {
@@ -69,7 +69,12 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
     public List<String> getDisplayableJDKs() {
         if (allowedJDKs.contains(ALL_JDK) ) {
-            return getJDKSasStrings();
+            List<String> jdks = new ArrayList<String>();
+            jdks.addAll(getJDKSasStrings());
+            if(!jdks.contains(getDefaultJDK())){
+             jdks.add(getDefaultJDK());
+            }
+            return jdks;
         } else {
             return allowedJDKs;
         }
