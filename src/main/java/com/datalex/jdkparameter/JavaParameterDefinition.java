@@ -75,6 +75,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
             if(!jdks.contains(getDefaultJDK())){
              jdks.add(getDefaultJDK());
             }
+            Collections.sort((jdks));
             return jdks;
         } else {
             List<String> jdks2 = new ArrayList<String>();
@@ -82,6 +83,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
             if (!jdks2.contains(getDefaultJDK())){
                 jdks2.add(getDefaultJDK());
             }
+            Collections.sort((jdks2));
             return jdks2;
         }
     }
