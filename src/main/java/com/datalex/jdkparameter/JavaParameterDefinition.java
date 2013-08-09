@@ -8,7 +8,12 @@ import net.sf.json.JSONObject;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.StaplerRequest;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,6 +23,8 @@ import java.util.*;
  * To change this template use File | Settings | File Templates.
  */
 public class JavaParameterDefinition extends ParameterDefinition {
+
+    private static final Logger LOGGER = Logger.getLogger(JavaParameterValue.class.getName());
 
     public static final String DEFAULT_JDK = "(Default)";
     public static final String ALL_JDK = "(All)";
@@ -70,21 +77,37 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
     public List<String> getDisplayableJDKs() {
         if (allowedJDKs.contains(ALL_JDK) ) {
+
             List<String> jdks = new ArrayList<String>();
             jdks.add(DEFAULT_JDK);
             jdks.addAll(getJDKSasStrings());
-            if(!jdks.contains(getDefaultJDK())){
+
+            if(!jdks.contains(getDefaultJDK()) && getJDKSasStrings().contains(getDefaultJDK())){
              jdks.add(getDefaultJDK());
             }
+
             Collections.sort((jdks));
+
+
+            if(!jdks.containsAll(getAllowedJDKs())){
+                LOGGER.log(Level.INFO, "[JDK Parameter]: A JDK that was selected has been removed from Jenkins.");
+            }
+
             return jdks;
         } else {
             List<String> jdks2 = new ArrayList<String>();
             jdks2.addAll(allowedJDKs);
-            if (!jdks2.contains(getDefaultJDK())){
+
+            if (!jdks2.contains(getDefaultJDK()) && getJDKSasStrings().contains(getDefaultJDK())) {
                 jdks2.add(getDefaultJDK());
             }
+
             Collections.sort((jdks2));
+
+            if(!jdks2.containsAll(getAllowedJDKs())){
+                LOGGER.log(Level.INFO, "[JDK Parameter]: A JDK that was selected has been removed from Jenkins.");
+            }
+
             return jdks2;
         }
     }
