@@ -42,6 +42,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
     //gets the names of configured JDKs
     public static List<String>  getJDKNames(){
         List<String> result = getJDKSasStrings();
+        Collections.sort((result));
         result.add(0, DEFAULT_JDK);
         result.add(0, ALL_JDK);
         return result;
