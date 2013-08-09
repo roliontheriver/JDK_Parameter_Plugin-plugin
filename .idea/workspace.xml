@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33afe26c-e175-44f5-9ad4-4d26509ca758" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" afterPath="$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JDK_Parameter_Choice.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1376053665197" ignored="false" />
+    <file path="/Dummy.txt" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1376056229317" ignored="false" />
     <file path="/JavaParameterDefinitionTest.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1375967726822" ignored="false" />
     <file path="/fragment.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1374671829994" ignored="false" />
     <file path="/JavaParameterDefinition.java" changelist="33afe26c-e175-44f5-9ad4-4d26509ca758" time="1376055538825" ignored="false" />
@@ -97,7 +96,7 @@
       <file leaf-file-name="JavaParameterDefinition.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="23" selection-start="2661" selection-end="2661" vertical-scroll-proportion="0.65696466">
+            <state line="94" column="30" selection-start="2820" selection-end="2820" vertical-scroll-proportion="0.75051975">
               <folding>
                 <element signature="e#2011#2019#0" expanded="true" />
                 <element signature="e#2353#2361#0" expanded="true" />
@@ -965,7 +964,11 @@
       <created>1376053675963</created>
       <updated>1376053675963</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Finished 1.0">
+      <created>1376056233245</created>
+      <updated>1376056233245</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1186,7 +1189,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/datalex/jdkparameter/JavaParameterDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="23" selection-start="2661" selection-end="2661" vertical-scroll-proportion="0.65696466">
+        <state line="94" column="30" selection-start="2820" selection-end="2820" vertical-scroll-proportion="0.75051975">
           <folding>
             <element signature="e#2011#2019#0" expanded="true" />
             <element signature="e#2353#2361#0" expanded="true" />
