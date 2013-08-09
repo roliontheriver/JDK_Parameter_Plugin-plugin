@@ -70,13 +70,19 @@ public class JavaParameterDefinition extends ParameterDefinition {
     public List<String> getDisplayableJDKs() {
         if (allowedJDKs.contains(ALL_JDK) ) {
             List<String> jdks = new ArrayList<String>();
+            jdks.add(DEFAULT_JDK);
             jdks.addAll(getJDKSasStrings());
             if(!jdks.contains(getDefaultJDK())){
              jdks.add(getDefaultJDK());
             }
             return jdks;
         } else {
-            return allowedJDKs;
+            List<String> jdks2 = new ArrayList<String>();
+            jdks2.addAll(allowedJDKs);
+            if (!jdks2.contains(getDefaultJDK())){
+                jdks2.add(getDefaultJDK());
+            }
+            return jdks2;
         }
     }
 
