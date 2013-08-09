@@ -98,7 +98,10 @@ public class JavaParameterDefinition extends ParameterDefinition {
             List<String> jdks2 = new ArrayList<String>();
             jdks2.addAll(allowedJDKs);
 
-            if (!jdks2.contains(getDefaultJDK()) && getJDKSasStrings().contains(getDefaultJDK())) {
+            boolean shouldAddDefaultJDK = !jdks2.contains(getDefaultJDK())
+                 && (getJDKSasStrings().contains(getDefaultJDK()) || getDefaultJDK().equals(DEFAULT_JDK));
+
+            if (shouldAddDefaultJDK) {
                 jdks2.add(getDefaultJDK());
             }
 
