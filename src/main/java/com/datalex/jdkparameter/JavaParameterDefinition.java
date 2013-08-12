@@ -89,11 +89,14 @@ public class JavaParameterDefinition extends ParameterDefinition {
             Collections.sort((jdks));
 
 
-            if(!jdks.containsAll(getAllowedJDKs())){
-                LOGGER.log(Level.INFO, "[JDK Parameter]: A JDK that was selected has been removed from Jenkins.");
+            for(String jdk : jdks) {
+             if(!getAllowedJDKs().contains(jdk) && !jdk.equalsIgnoreCase(DEFAULT_JDK)) {
+                    LOGGER.log(Level.INFO, "[JDK Parameter]: " + jdk + " which was selected has been removed from Jenkins.");
+                }
             }
 
             return jdks;
+
         } else {
             List<String> jdks2 = new ArrayList<String>();
             jdks2.addAll(allowedJDKs);
