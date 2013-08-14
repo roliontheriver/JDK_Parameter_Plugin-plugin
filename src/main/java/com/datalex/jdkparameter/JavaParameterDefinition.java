@@ -110,8 +110,10 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
             Collections.sort((jdks2));
 
-            if(!jdks2.containsAll(getAllowedJDKs())){
-                LOGGER.log(Level.INFO, "[JDK Parameter]: A JDK that was selected has been removed from Jenkins.");
+            for(String jdk : jdks2) {
+                if(!getAllowedJDKs().contains(jdk) && !jdk.equalsIgnoreCase(DEFAULT_JDK)) {
+                    LOGGER.log(Level.INFO, "[JDK Parameter]: " + jdk + " which was selected has been removed from Jenkins.");
+                }
             }
 
             return jdks2;
