@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JDK_Parameter_Choice.iml" filepath="$PROJECT_DIR$/JDK_Parameter_Choice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/target/jenkins-for-test/WEB-INF/WEB-INF.iml" filepath="$PROJECT_DIR$/target/jenkins-for-test/WEB-INF/WEB-INF.iml" />
       <module fileurl="file://$PROJECT_DIR$/work/plugins/javadoc/WEB-INF/WEB-INF1.iml" filepath="$PROJECT_DIR$/work/plugins/javadoc/WEB-INF/WEB-INF1.iml" />
       <module fileurl="file://$PROJECT_DIR$/work/plugins/ant/WEB-INF/WEB-INF2.iml" filepath="$PROJECT_DIR$/work/plugins/ant/WEB-INF/WEB-INF2.iml" />
       <module fileurl="file://$PROJECT_DIR$/work/plugins/maven-plugin/WEB-INF/WEB-INF3.iml" filepath="$PROJECT_DIR$/work/plugins/maven-plugin/WEB-INF/WEB-INF3.iml" />
