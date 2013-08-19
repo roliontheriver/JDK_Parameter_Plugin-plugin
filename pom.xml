@@ -9,30 +9,42 @@
 		<version>1.480.3</version>
 	</parent>
 
-	<artifactId>JDK_Parameter_Choice</artifactId>
-	<version>Beta</version>
-
+	<artifactId>JDK_Parameter_Plugin</artifactId>
+	<version>1.0</version>
+    <name>JDK Parameter Plugin</name>
 	<packaging>hpi</packaging>
+	<description>This plugin allows you to specify what JDK should be used for a job at the build parameters stage.</description>
+	<url>https://wiki.jenkins-ci.org/display/JENKINS/JDK+Parameter+Plugin</url>
 
-	<name>JDK Parameter Choice Plugin</name>
-	<description>This plugin allows you to specify what JDK should be used for a job at the build stage.</description>
+    <licenses>
+        <license>
+            <name>MIT license</name>
+            <comments>All source code is under the MIT license.</comments>
+        </license>
+    </licenses>
 
-	<url>https://wiki.jenkins-ci.org/display/JENKINS/xxxx</url>
 	<scm>
-		<connection>scm:git:git://github.com/Sargemck/JavaParameterChoice.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/Sargemck/javaparameterchoice.git</developerConnection>
-		<url>https://github.com/sargemck/javaparameterchoice</url>
+		<connection>scm:git:git://github.com/Sargemck/JDK_Parameter_Choice.git</connection>
+		<developerConnection>scm:git:ssh://github.com/Sargemck/JDK_Parameter_Choice.git</developerConnection>
+		<url>https://github.com/Sargemck/JDK_Parameter_Choice.git</url>
 	</scm>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
     <developers>
+        <developer>
+            <id>baris_batiege</id>
+            <name>Baris Batiege</name>
+            <email>baris.batiege@datalex.com</email>
+        </developer>
 		<developer>
-			<id>xxxxx</id>
+			<id>fneves</id>
 			<name>Fabio Neves</name>
 			<email>fabio.neves@datalex.com</email>
 		</developer>
 	</developers>
+
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -101,10 +113,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<dependencies>
-
-	</dependencies>
 
 	<repositories>
 		<repository>
