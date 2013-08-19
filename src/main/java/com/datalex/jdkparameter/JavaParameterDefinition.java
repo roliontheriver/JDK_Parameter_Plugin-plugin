@@ -91,7 +91,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
             for(String jdk : jdks) {
              if(!getAllowedJDKs().contains(jdk) && !jdk.equalsIgnoreCase(DEFAULT_JDK)) {
-                    LOGGER.log(Level.INFO, "[JDK Parameter]: " + jdk + " which was selected has been removed from Jenkins.");
+                    LOGGER.log(Level.INFO, "[JDK Parameter]: " + jdk + " which was configured has been removed from Jenkins.");
                 }
             }
 
@@ -112,7 +112,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
             for(String jdk : jdks2) {
                 if(!getAllowedJDKs().contains(jdk) && !jdk.equalsIgnoreCase(DEFAULT_JDK)) {
-                    LOGGER.log(Level.INFO, "[JDK Parameter]: " + jdk + " which was selected has been removed from Jenkins.");
+                    LOGGER.log(Level.INFO, "[JDK Parameter]: " + jdk + " which was configured has been removed from Jenkins.");
                 }
             }
 
