@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>JDK_Parameter_Plugin</artifactId>
-	<version>1.0</version>
+	<version>1.0-SNAPSHOT</version>
     <name>JDK Parameter Plugin</name>
 	<packaging>hpi</packaging>
 	<description>This plugin allows you to specify what JDK should be used for a job at the build parameters stage.</description>
@@ -24,9 +24,9 @@
     </licenses>
 
 	<scm>
-		<connection>scm:git:git://github.com/Sargemck/JDK_Parameter_Choice.git</connection>
-		<developerConnection>scm:git:ssh://github.com/Sargemck/JDK_Parameter_Choice.git</developerConnection>
-		<url>https://github.com/Sargemck/JDK_Parameter_Choice.git</url>
+		<connection>scm:git:git://github.com/jenkinsci/JDK_Parameter_Choice.git</connection>
+		<developerConnection>scm:git:ssh://github.com/jenkinsci/JDK_Parameter_Choice.git</developerConnection>
+		<url>https://github.com/jenkinsci/JDK_Parameter_Choice.git</url>
 	</scm>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -39,7 +39,7 @@
             <email>baris.batiege@datalex.com</email>
         </developer>
 		<developer>
-			<id>fneves</id>
+			<id>fneves-datalex</id>
 			<name>Fabio Neves</name>
 			<email>fabio.neves@datalex.com</email>
 		</developer>
