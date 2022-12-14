@@ -144,7 +144,7 @@ public class JavaParameterDefinition extends SimpleParameterDefinition {
     @Override
     public ParameterValue createValue(StaplerRequest req, JSONObject jo) {
         StringParameterValue paramValue = req.bindJSON(StringParameterValue.class, jo);
-        return new JavaParameterValue(paramValue.getName(), getDescription(), (String)paramValue.value);
+        return new JavaParameterValue(paramValue.getName(), getDescription(), paramValue.getValue());
     }
 
     @Override
