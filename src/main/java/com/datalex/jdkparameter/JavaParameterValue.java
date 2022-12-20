@@ -6,7 +6,6 @@ import hudson.model.ParameterValue;
 import hudson.tasks.BuildWrapper;
 import org.kohsuke.stapler.DataBoundConstructor;
 
-import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -35,25 +34,6 @@ public class JavaParameterValue extends ParameterValue {
 
     public void setSelectedJDK(String selectedJDK) {
         this.selectedJDK = selectedJDK;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        return Objects.equals(value, ((JavaParameterValue)obj).getValue());
-    }
-
-    @Override
-    public int hashCode() {
-        return value != null ? value.hashCode() : 37;
     }
 
     @Override
@@ -88,3 +68,5 @@ public class JavaParameterValue extends ParameterValue {
     }
 
 }
+
+
