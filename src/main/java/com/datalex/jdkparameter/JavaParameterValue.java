@@ -3,7 +3,7 @@ package com.datalex.jdkparameter;
 import hudson.EnvVars;
 import hudson.model.AbstractBuild;
 import hudson.model.JDK;
-import hudson.model.StringParameterValue;
+import hudson.model.ParameterValue;
 import hudson.tasks.BuildWrapper;
 import org.kohsuke.stapler.DataBoundConstructor;
 
@@ -19,24 +19,24 @@ import java.util.logging.Logger;
  * Time: 11:28 AM
  * To change this template use File | Settings | File Templates.
  */
-public class JavaParameterValue extends StringParameterValue {
+public class JavaParameterValue extends ParameterValue {
 
     private static final Logger LOGGER = Logger.getLogger(JavaParameterValue.class.getName());
 
-    private String value;
+    private String selectedJDK;
 
     @DataBoundConstructor
-    public JavaParameterValue(String name, String description, String value){
+    public JavaParameterValue(String name, String description, String selectedJDK){
         super(name, description);
-        this.value = value;
+        this.selectedJDK = selectedJDK;
     }
 
-    public String getvalue() {
-        return value;
+    public String getSelectedJDK() {
+        return selectedJDK;
     }
 
-    public void setvalue(String value) {
-        this.value = value;
+    public void setSelectedJDK(String selectedJDK) {
+        this.selectedJDK = selectedJDK;
     }
 
     @Override
@@ -72,14 +72,14 @@ public class JavaParameterValue extends StringParameterValue {
         selected = new JDK(JavaParameterDefinition.DEFAULT_JDK,null);
 
         for(JDK jdk : jenkins.model.Jenkins.getInstance().getJDKs()) {
-            if(jdk.getName().equalsIgnoreCase(value))  {
+            if(jdk.getName().equalsIgnoreCase(selectedJDK))  {
                 selected = jdk;
                 jdkIsAvailable = true;
                 break;
             }
         }
 
-        if (value.equals(JavaParameterDefinition.DEFAULT_JDK)){
+        if (selectedJDK.equals(JavaParameterDefinition.DEFAULT_JDK)){
             jdkIsAvailable = true;
         }
 
