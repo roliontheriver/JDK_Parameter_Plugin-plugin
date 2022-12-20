@@ -1,13 +1,11 @@
 package com.datalex.jdkparameter;
 
-import hudson.EnvVars;
 import hudson.model.AbstractBuild;
 import hudson.model.JDK;
 import hudson.model.ParameterValue;
 import hudson.tasks.BuildWrapper;
 import org.kohsuke.stapler.DataBoundConstructor;
 
-import java.util.Locale;
 import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -56,12 +54,6 @@ public class JavaParameterValue extends ParameterValue {
     @Override
     public int hashCode() {
         return value != null ? value.hashCode() : 37;
-    }
-
-    @Override
-    public void buildEnvVars(AbstractBuild<?, ?> build, EnvVars env) {
-        env.put(this.name, this.value);
-        env.put(this.name.toUpperCase(Locale.ENGLISH), this.value);
     }
 
     @Override
