@@ -34,7 +34,7 @@ THE SOFTWARE.
             <input type="hidden" name="description" value="${it.description}" />
 
 
-            <select name="value" style="width:100px; margin-left: 15px;">
+            <select name="selectedJDK" style="width:100px; margin-left: 15px;">
                 <j:forEach var="aJDK" items="${it.displayableJDKs}" varStatus="loop">
                     <j:choose>
                         <j:when test="${it.defaultJDK.equals(aJDK)}" >

@@ -1,14 +1,11 @@
 package com.datalex.jdkparameter;
 
-import hudson.EnvVars;
 import hudson.model.AbstractBuild;
 import hudson.model.JDK;
-import hudson.model.StringParameterValue;
+import hudson.model.ParameterValue;
 import hudson.tasks.BuildWrapper;
 import org.kohsuke.stapler.DataBoundConstructor;
 
-import java.util.Locale;
-import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -19,49 +16,24 @@ import java.util.logging.Logger;
  * Time: 11:28 AM
  * To change this template use File | Settings | File Templates.
  */
-public class JavaParameterValue extends StringParameterValue {
+public class JavaParameterValue extends ParameterValue {
 
     private static final Logger LOGGER = Logger.getLogger(JavaParameterValue.class.getName());
 
-    private String value;
+    private String selectedJDK;
 
     @DataBoundConstructor
-    public JavaParameterValue(String name, String description, String value){
+    public JavaParameterValue(String name, String description, String selectedJDK){
         super(name, description);
-        this.value = value;
+        this.selectedJDK = selectedJDK;
     }
 
-    public String getvalue() {
-        return value;
+    public String getSelectedJDK() {
+        return selectedJDK;
     }
 
-    public void setvalue(String value) {
-        this.value = value;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        return Objects.equals(value, ((JavaParameterValue)obj).getValue());
-    }
-
-    @Override
-    public int hashCode() {
-        return value != null ? value.hashCode() : 37;
-    }
-
-    @Override
-    public void buildEnvVars(AbstractBuild<?, ?> build, EnvVars env) {
-        env.put(this.name, this.value);
-        env.put(this.name.toUpperCase(Locale.ENGLISH), this.value);
+    public void setSelectedJDK(String selectedJDK) {
+        this.selectedJDK = selectedJDK;
     }
 
     @Override
@@ -72,14 +44,14 @@ public class JavaParameterValue extends StringParameterValue {
         selected = new JDK(JavaParameterDefinition.DEFAULT_JDK,null);
 
         for(JDK jdk : jenkins.model.Jenkins.getInstance().getJDKs()) {
-            if(jdk.getName().equalsIgnoreCase(value))  {
+            if(jdk.getName().equalsIgnoreCase(selectedJDK))  {
                 selected = jdk;
                 jdkIsAvailable = true;
                 break;
             }
         }
 
-        if (value.equals(JavaParameterDefinition.DEFAULT_JDK)){
+        if (selectedJDK.equals(JavaParameterDefinition.DEFAULT_JDK)){
             jdkIsAvailable = true;
         }
 
@@ -96,3 +68,5 @@ public class JavaParameterValue extends StringParameterValue {
     }
 
 }
+
+

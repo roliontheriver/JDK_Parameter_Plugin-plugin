@@ -3,9 +3,7 @@ package com.datalex.jdkparameter;
 import hudson.Extension;
 import hudson.model.JDK;
 import hudson.model.ParameterDefinition;
-import hudson.model.StringParameterValue;
 import hudson.model.ParameterValue;
-import hudson.model.SimpleParameterDefinition;
 import net.sf.json.JSONObject;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.StaplerRequest;
@@ -24,7 +22,7 @@ import java.util.logging.Logger;
  * Time: 10:53 AM
  * To change this template use File | Settings | File Templates.
  */
-public class JavaParameterDefinition extends SimpleParameterDefinition {
+public class JavaParameterDefinition extends ParameterDefinition {
 
     private static final Logger LOGGER = Logger.getLogger(JavaParameterValue.class.getName());
 
@@ -127,11 +125,6 @@ public class JavaParameterDefinition extends SimpleParameterDefinition {
         return defaultJDK;
     }
 
-    @Override
-    public ParameterValue getDefaultParameterValue() {
-          return new JavaParameterValue(getName(), getDescription(), getDefaultJDK());
-    }
-
 
     //gets the list of JDKs to put in "selectable JDKs" array in job config, includes the base JDKs from jenkins
     public List<String>  getSelectableJDKNames(){
@@ -143,15 +136,17 @@ public class JavaParameterDefinition extends SimpleParameterDefinition {
 
     @Override
     public ParameterValue createValue(StaplerRequest req, JSONObject jo) {
-        StringParameterValue paramValue = req.bindJSON(StringParameterValue.class, jo);
-        return new JavaParameterValue(paramValue.getName(), getDescription(), paramValue.getValue());
+        final String name = jo.getString("name");
+        final String selectedJDK = jo.getString("selectedJDK");
+        return  new JavaParameterValue(name, getDescription(), selectedJDK);
     }
 
     @Override
-    public ParameterValue createValue(String value) {
-        return new JavaParameterValue(getName(), getDescription(), value);
+    public ParameterValue createValue(StaplerRequest req) {
+        String name = (String)req.getAttribute("name");
+        String selectedJDK = (String)req.getAttribute("selectedJDK");
+        return new JavaParameterValue(name, getDescription(), selectedJDK);
     }
-
 
     @Extension
     public static class DescriptorImpl extends ParameterDescriptor {
