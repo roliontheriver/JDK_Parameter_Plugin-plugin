@@ -37,7 +37,10 @@ public class JavaParameterDefinition extends ParameterDefinition {
     @DataBoundConstructor
     public JavaParameterDefinition(String name,String description ,
                                    String defaultJDK, List<String>allowedJDKs ){
-        super(name, description);
+        super(name);
+        if (description != null) {
+          setDescription(description);
+        }
         this.defaultJDK = defaultJDK;
         if(allowedJDKs.contains(ALL_JDK)) {
             this.allowedJDKs = Arrays.asList(ALL_JDK);
@@ -62,7 +65,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
     }
 
     protected static List<String> getJDKSasStrings() {
-        List<JDK> jdkList = jenkins.model.Jenkins.getInstance().getJDKs();
+        List<JDK> jdkList = jenkins.model.Jenkins.get().getJDKs();
         List<String> result = new ArrayList<String>();
         for(JDK jdk : jdkList) {
             result.add(jdk.getName());
@@ -136,6 +139,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
     @Override
     public ParameterValue createValue(StaplerRequest req, JSONObject jo) {
+      System.out.println("createValue 1");
         final String name = jo.getString("name");
         final String selectedJDK = jo.getString("selectedJDK");
         return  new JavaParameterValue(name, getDescription(), selectedJDK);
@@ -143,6 +147,7 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
     @Override
     public ParameterValue createValue(StaplerRequest req) {
+      System.out.println("createValue 2");
         String name = (String)req.getAttribute("name");
         String selectedJDK = (String)req.getAttribute("selectedJDK");
         return new JavaParameterValue(name, getDescription(), selectedJDK);
@@ -155,5 +160,10 @@ public class JavaParameterDefinition extends ParameterDefinition {
         public String getDisplayName() {
             return "JDK Parameter";
         }
+    }
+
+    @Override
+    public ParameterValue getDefaultParameterValue() {
+      return new JavaParameterValue(getName(), getDescription(), defaultJDK);
     }
 }
