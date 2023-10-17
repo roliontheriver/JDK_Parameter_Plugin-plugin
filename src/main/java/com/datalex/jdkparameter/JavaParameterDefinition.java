@@ -139,7 +139,6 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
     @Override
     public ParameterValue createValue(StaplerRequest req, JSONObject jo) {
-      System.out.println("createValue 1");
         final String name = jo.getString("name");
         final String selectedJDK = jo.getString("selectedJDK");
         return  new JavaParameterValue(name, getDescription(), selectedJDK);
@@ -147,7 +146,6 @@ public class JavaParameterDefinition extends ParameterDefinition {
 
     @Override
     public ParameterValue createValue(StaplerRequest req) {
-      System.out.println("createValue 2");
         String name = (String)req.getAttribute("name");
         String selectedJDK = (String)req.getAttribute("selectedJDK");
         return new JavaParameterValue(name, getDescription(), selectedJDK);
